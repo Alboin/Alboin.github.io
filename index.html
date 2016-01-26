@@ -1,4 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head> Cornelisyolo </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script> 
+
+	function hej() {
+		var xhttp = new XMLHttpRequest();
+		xhttp.open("GET", "https://en.wikipedia.org/w/api.php?action=query&titles=Main%20Page&prop=revisions&rvprop=content&format=jsonfm", true);
+		xhttp.send();
+
+		console.log(xhttp);
+
+	}
+	hej();
+
+</script>
 </html>
