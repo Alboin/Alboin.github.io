@@ -23,10 +23,9 @@ a.top_menu:hover {
 	background-color: rgb(114,169,153) !important;
 	color: white;
 	transition: all 0.5s ease-out;
+	cursor: pointer;
 }
-a.active_menu {
-	background-color: rgb(114,169,153) !important;
-}
+
 #main_logo {
 	margin-top: 1%;
 	margin-right: 37.5%;
@@ -91,7 +90,8 @@ h1, h2 {
 	margin-left:10%;
 }
 p {
-	font-size: large;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18pt;
 	margin-right: 10%;
 	margin-left:10%;
 	margin-bottom: 2%;
@@ -114,4 +114,5 @@ iframe {
 	width: 800px;
 	height: 500px;
 	margin-top: 5%;
+	margin-left: 5%;
 }
