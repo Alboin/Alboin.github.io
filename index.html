@@ -28,6 +28,7 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -158,19 +159,33 @@
 	});
 
 	$(document).ready( function() {
-		var img = $('<img id="harry" style="position:absolute; z-index: 500; max-width=200px;" src="img/harry.png" width="100%">'); //8.7%
+		var img = $('<img id="harry" style="position:absolute; z-index: 500; max-width=200px;" src="img/harry.png" width="100%">');
 		img.appendTo('.container-fluid');
 		img.width($("#profilbild").width());
 		img.offset($("#profilbild").offset());
 		img.css("opacity", 0);
 
+		var boy = $('<p id="boy_lived" style="position:absolute; z-index: 499;"> "The boy who lived" </p>');
+		boy.appendTo('.container-fluid');
+		boy.offset($("#description_text").offset());
+		boy.css("color", "black");
+		boy.css("font-size", "20px");
+		boy.css("font-family", "'Shadows Into Light', cursive")	
+		boy.css("opacity", 0);
+
 		$("#harry").mouseleave( function() {
 			$("#harry").fadeTo(200, 0);
+			$("#description_text").fadeTo(200, 1);
+			$("#boy_lived").fadeTo(200, 0);
+
 		});
 		$("#harry").mouseenter( function() {
 			$("#harry").fadeTo(200, 1);
+			$("#description_text").fadeTo(200, 0);
+			$("#boy_lived").fadeTo(200, 1);
 		});
 	});
+
 
 	$(window).resize(function() {
 		$("#harry").width($("#profilbild").width());
