@@ -45,6 +45,8 @@
 </head>
 <body>
 
+<audio id="hedwig" src="hedwig.mp3" type="audio/mp3"></audio>  
+
 <div class="container-fluid">
 	<div class="col-md-2"></div>
 	<div class="col-md-8">
@@ -177,12 +179,17 @@
 			$("#harry").stop(true).fadeTo(200, 0);
 			$("#description_text").stop(true).fadeTo(200, 1);
 			$("#boy_lived").stop(true).fadeTo(200, 0);
+			$('audio').each(function(){
+    			this.pause(); // Stop playing
+			}); 
 
 		});
 		$("#harry").mouseenter( function() {
 			$("#harry").fadeTo(200, 1);
-			$("#description_text").fadeTo(500, 0);
-			$("#boy_lived").fadeTo(800, 1);
+			$("#description_text").fadeTo(200, 0);
+			$("#boy_lived").fadeTo(200, 1);
+			$('#hedwig').get(0).currentTime = 0.3;
+			$('#hedwig').get(0).play();
 		});
 	});
 
@@ -191,7 +198,6 @@
 		$("#harry").width($("#profilbild").width());
 		$("#harry").offset($("#profilbild").offset());
 	});
-
 
 
 </script>
