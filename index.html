@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Albin's projects</title>
+
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="3D visualization, student, data-visualization, open data, wikipedia, fluid simulation, unemployment, navier-stokes, SPH
+		smoothed-particle hydrodynamics, hackatrhon, hack for sweden, albin bergström, ballpit, university, media technology, medieteknik, bollhav, arbetslöshet">
+	<meta name="author" content="Albin Bergström">
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Fontawesome -->
+	<script src="https://use.fontawesome.com/7b81d9e7e5.js"></script>
+
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+		<div class="row">
+			<div class="col-md-5">
+				<h1 id="name"> Albin Bergström </h1>
+			</div>
+			<div class="col-md-2">
+				<img id="profilbild" src="img/albin.png" width="100%">
+			</div>
+			<div class="col-md-5">
+				<p id="description_text">
+					Here are some of the projects that I've participated in during my studies at Linköping University.
+				</p>
+			</div>
+		</div>
+		<a href="http://alboin.github.io/Wikinspire.en">
+		<div class="row project">
+			<div class="col-md-4" id="img1">
+				<img class="img-thumbnail" id="wiki_img" src="img\wiki2.png" width="100%">
+			</div>
+			<div class="col-md-8">
+				Wikinspire
+				<p>
+					This is the bachelor project that I and four other students at Linköping University did during spring 2016.
+					The website visualizes articles from Wikipedia, how different articles are related to each other and how they are related in time and space.
+					<br><br>
+					For a swedish version of the website use go to
+					<span id="wiki_link"> http://alboin.github.io/Wikinspire </span>				
+					or just click anywhere in this box to get to the english version. </p>
+			</div>
+		</div>
+		</a>
+	
+		<a href="http://sofiekhullar.github.io/hack4swe/"> 
+		<div class="row project">
+			<div class="col-md-4">
+				<img class="img-thumbnail" src="img\arbetslos.png" width="100%">
+			</div>
+			<div class="col-md-8">
+			Fullt ös arbetslös 
+			<p>
+				During the hackathron "Hack for Sweden" (2016) me and three other students created a website for visualizing unemployment in Sweden with the help of open data. On the website you can see the comparisons between the sexes and comparisons between different areas of Sweden, visualized with graphs and a 3D-representation of the country.
+			</p>
+			</div>
+		</div>
+		</a>
+	
+		<a href="http://alboin.github.io/bollhav"> 
+		<div class="row project">
+			<div class="col-md-4">
+				<img class="img-thumbnail" src="img\bollhav.png" width="100%">
+			</div>
+			<div class="col-md-8">
+			Bollhav 
+			<p>
+				As a part of the course in modelling and simulation me and three other students simulated a ballpit in 3D with the help of the Navier-Stokes equations that is used in fluid simulations. The method for smoothed-particle hydrodynamics is used to compute the different forces involved.
+			</p>
+			</div>
+		</div>
+		</a>
+	
+	</div>
+	<div class="row">
+		<div class="col-md-5">
+		</div>
+		<div class="col-md-1">
+			<i id="github_icon" class="fa fa-github fa-4x icons" aria-hidden="true"></i>
+		</div>
+		<div class="col-md-1">
+			<i id="linkedin_icon" class="fa fa-linkedin-square fa-4x icons" aria-hidden="true"></i>
+		</div>
+		<div class="col-md-5">
+		</div>
+	</div>
+	<div class="col-md-2"></div>
+	
+</div>
+
+
+</body>
+
+<script>
+
+	$("#wiki_link").click( function() {
+		window.location.href = "http://alboin.github.io/Wikinspire";
+		return false;
+	});
+
+	$("#github_icon").click( function() {
+		window.location.href = "https://github.com/Alboin";
+		return false;
+	});	
+
+	$("#linkedin_icon").click( function() {
+		window.location.href = "https://www.linkedin.com/in/albin-bergstr%C3%B6m-5069b649";
+		return false;
+	});
+</script>
