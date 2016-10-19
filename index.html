@@ -32,7 +32,7 @@
 	<div class="col-md-2"></div>
 	<div class="col-md-8">
 		<div class="row">
-			<div class="col-md-5">
+			<div id="profilbild_div" class="col-md-5">
 				<h1 id="name"> Albin Bergström </h1>
 			</div>
 			<div class="col-md-2">
@@ -140,4 +140,22 @@
 		window.location.href = "https://www.linkedin.com/in/albin-bergstr%C3%B6m-5069b649";
 		return false;
 	});
+
+	$(document).ready( function() {
+		var img = $('<img id="harry" style="position:absolute; z-index: 500; max-width=200px;" src="img/harry.png" width="100%">'); //8.7%
+		img.appendTo('.container-fluid');
+		img.width($("#profilbild").width());
+		img.offset($("#profilbild").offset());
+		img.css("opacity", 0);
+
+		$("#harry").mouseleave( function() {
+			$("#harry").fadeTo(200, 0);
+		});
+		$("#harry").mouseenter( function() {
+			$("#harry").fadeTo(200, 1);
+		});
+	});
+
+
+
 </script>

@@ -42,9 +42,9 @@ img#profilbild {
 }
 
 h1#name {
-	font-size: 34px;
+	font-size: 30px;
 	text-align: right;
-	margin-top: 15%;
+	margin-top: 16%;
 }
 
 i.icons {
@@ -64,15 +64,7 @@ i.icons:hover {
 	cursor: pointer;
 }
 
-#hej {
-	height: 100%;
-	width: 100%;
-	padding: 10%;
-	background-color: gray;
-	text-align: center;
-	vertical-align: middle;
-	border: 5px solid black;
-}
+
 
 .project {
 	margin: 3%;
