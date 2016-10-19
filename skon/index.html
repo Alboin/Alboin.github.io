@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SKÖN</title>
+
+      <!-- Latest compiled and minified CSS (bootstrap) -->
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  	<!-- Fonts -->
+  	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Josefin+Sans" rel="stylesheet">
+
+  	<!-- jQuery library -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  	<!-- Latest compiled JavaScript -->
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+    <!--<div class="container text-center">-->
+        
+        <!-- HEADER -->
+        <div class="row">
+            <div class="col-sm-12">
+                <a href="http://skon.nu"><img id="main_logo" src="logotyp.png" width="25%"></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <nav class="navbar navbar-inverted col-sm-12">
+                <div class="container-fluid">
+                    <ul id="header_bar" class="nav navbar-nav">
+                      <li><a id="hem" class="top_menu">HEM</a></li>
+                      <li><a id="om_koren" class="top_menu">OM KÖREN</a></li>
+                      <li><a id="galleri" class="top_menu">GALLERI</a></li>
+                      <li><a id="ansok" class="top_menu">ANSÖK</a></li>
+                      <li><a id="kontakt" class="top_menu">KONTAKT</a></li>
+                      <li><a id="medlemmar" class="top_menu">FÖR MEDLEMMAR</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- PAGE CONTENT -->
+        <div class="row">
+          <div id="content" class="col-sm-12 text-left">
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+         <div class="row background">
+              <div class="col-sm-4 text-left">
+                  <h2 class="footer_heading">Kontakt</h2>
+                  <p class="footer_text"> Boka kören via bokningsansvarig: <br> bokning@skon.nu eller 070-295 79 92 </p>
+                  <p class="footer_text"> Kontakta styrelsen via: <br> styrelsen@skon.nu </p>
+                  <p class="footer_text"> Kontakta webansvarig via: <br> web@skon.nu </p>
+              </div>
+
+              <div class="col-sm-4 text-center">
+                <!--<img src="logo_vit.png" width="40%" style="margin-right: 15%">-->
+                <br>
+                <a href="https://www.instagram.com/studentkorennkpg/"><i class="fa fa-instagram footer_icons" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/SK%C3%96N-210123079010330/?fref=ts"><i class="fa fa-facebook-official footer_icons" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UCsTLM6Uv8Cct1eCMeImhWBA"><i class="fa fa-youtube footer_icons" aria-hidden="true"></i></a>
+                <br><br>
+                <img src="LiU_primar_vit.png" width="40%" style="margin-bottom: 4%;">
+                <img src="kulturens_logo_vit.png" width="40%" style="margin-top: 2%; margin-right: 4%; margin-bottom: 4%;">
+              </div>
+
+              <div class="col-sm-4 text-right">
+                <h2 class="footer_heading" style="margin-top: 15%;"> Adress </h2>
+                  <p class="footer_text">SKÖN - Studentkören i Norrköping<br>Bomullsspinneriet<br>Campus Norrköping<br>601 74 Norrköping</p>
+              </div>
+        </div>
+   <!-- </div> -->
+  </body>
+</html>
+
+<script>
+  
+  //Changes page content depending on which button the user presses.
+  $("#hem").click(function(){
+    $("#content").load("contents.html #hem_content");
+    changeSelectedPage("hem");
+  });
+  $("#om_koren").click(function(){
+    $("#content").load("contents.html #om_koren_content");
+    changeSelectedPage("om_koren");
+  });
+  $("#galleri").click(function(){
+    $("#content").load("contents.html #galleri_content");
+    changeSelectedPage("galleri");
+  });
+  $("#ansok").click(function(){
+    $("#content").load("contents.html #ansok_content");
+    changeSelectedPage("ansok");
+  });
+  $("#kontakt").click(function(){
+    $("#content").load("contents.html #kontakt_content");
+    changeSelectedPage("kontakt");
+  });
+  $("#medlemmar").click(function(){
+    $("#content").load("contents.html #medlemmar_content");
+    changeSelectedPage("medlemmar");
+  });
+
+  //Load the index page content
+  $("#content").load("contents.html #hem_content");
+
+  //Function to make the choosen tab "selected".
+  function changeSelectedPage (page) {
+    $("#hem").css("background-color", "rgb(144,199,183)");
+    $("#om_koren").css("background-color", "rgb(144,199,183)");
+    $("#galleri").css("background-color", "rgb(144,199,183)");
+    $("#ansok").css("background-color", "rgb(144,199,183)");
+    $("#kontakt").css("background-color", "rgb(144,199,183)");
+    $("#medlemmar").css("background-color", "rgb(144,199,183)");
+    $("#" + page).css("background-color", "rgb(114,169,153)");
+    //$("#header_bar").contents().css("background-color", "rgb(144,199,183)"); //Does not work for some reason.
+  }
+
+</script>
