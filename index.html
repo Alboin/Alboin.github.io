@@ -27,6 +27,7 @@
 
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="src/flip.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 
@@ -51,6 +52,7 @@
 	<div class="col-md-2"></div>
 	<div class="col-md-8">
 		<div class="row">
+
 			<div id="profilbild_div" class="col-md-5">
 				<h1 id="name"> Albin Bergström </h1>
 			</div>
@@ -63,6 +65,7 @@
 				</p>
 			</div>
 		</div>
+
 		<a href="http://alboin.github.io/Wikinspire.en">
 		<div class="row project">
 			<div class="col-md-4" id="img1">
@@ -80,6 +83,8 @@
 			</div>
 		</div>
 		</a>
+
+
 	
 		<a href="http://sofiekhullar.github.io/hack4swe/"> 
 		<div class="row project">
@@ -87,10 +92,10 @@
 				<img class="img-thumbnail" src="img\arbetslos.png" width="100%">
 			</div>
 			<div class="col-md-8">
-			Fullt ös arbetslös 
-			<p>
-				During the hackathron "Hack for Sweden" (2016) me and three other students created a website for visualizing unemployment in Sweden with the help of open data. On the website you can see the comparisons between the sexes and comparisons between different areas of Sweden, visualized with graphs and a 3D-representation of the country.
-			</p>
+				Fullt ös arbetslös 
+				<p>
+					During the hackathron "Hack for Sweden" (2016) me and three other students created a website for visualizing unemployment in Sweden with the help of open data. On the website you can see the comparisons between the sexes and comparisons between different areas of Sweden, visualized with graphs and a 3D-representation of the country.
+				</p>
 			</div>
 		</div>
 		</a>
@@ -101,13 +106,27 @@
 				<img class="img-thumbnail" src="img\bollhav.png" width="100%">
 			</div>
 			<div class="col-md-8">
-			Bollhav 
-			<p>
-				As a part of the course in modelling and simulation me and three other students simulated a ballpit in 3D with the help of the Navier-Stokes equations that is used in fluid simulations. The method for smoothed-particle hydrodynamics is used to compute the different forces involved.
-			</p>
+				Bollhav 
+				<p>
+					As a part of the course in modelling and simulation me and three other students simulated a ballpit in 3D with the help of the Navier-Stokes equations that is used in fluid simulations. The method for smoothed-particle hydrodynamics is used to compute the different forces involved.
+				</p>
 			</div>
 		</div>
 		</a>
+
+		<a href="http://jonathangrangien.se/myGalaxy/"> 
+		<div class="row project">
+			<div class="col-md-4">
+				<img class="img-thumbnail" src="img\galaxy3.jpg" width="100%">
+			</div>
+			<div class="col-md-8">
+				Galaxy Goose 
+				<p>
+					During a course in 3D computer graphics me and a group of four other students developed a WebGL application where the user gets to create a solar system in 3D. The user can modify different properties of the planets such as the orbit, amount of moons, texture or even place objects at the different planets. To be able to create and modify a planet in the solar system you will have to create a user and log in.
+				</p>
+			</div>
+		</div>
+		</a>		
 
 		<a href="http://skon.nu/index.php"> 
 		<div class="row project">
@@ -115,10 +134,10 @@
 				<img class="img-thumbnail" src="img\skon.png" width="100%">
 			</div>
 			<div class="col-md-8">
-			Skön's new webpage 
-			<p>
-				The student choir "Skön" needed a new external webpage to attract new students to sing in the choir so me and two other guys made one.
-			</p>
+				Skön's new webpage 
+				<p>
+					The student choir "Skön" needed a new external webpage to attract new students to sing in the choir so me and two other guys made one.
+				</p>
 			</div>
 		</div>
 		</a>
@@ -161,11 +180,18 @@
 	});
 
 	$(document).ready( function() {
-		var img = $('<img id="harry" style="position:absolute; z-index: 500; max-width=200px;" src="img/harry.png" width="100%">');
-		img.appendTo('.container-fluid');
-		img.width($("#profilbild").width());
-		img.offset($("#profilbild").offset());
-		img.css("opacity", 0);
+		var img1 = $('<img id="harry" style="position:absolute; z-index: 500; max-width=200px;" src="img/harry.png" width="100%">');
+		img1.appendTo('.container-fluid');
+		img1.width($("#profilbild").width());
+		img1.offset($("#profilbild").offset());
+		img1.css("opacity", 0);
+
+		var img2 = $('<img id="albin_bergstrom" style="position:absolute; z-index: 501; max-width=200px;" src="img/albin_bergstrom.png" width="100%">');
+		img2.appendTo('.container-fluid');
+		img2.width($("#name").width()*0.67);
+		img2.offset({top: $("#name").offset().top, left: $("#name").offset().left + $("#name").width() * 0.32});
+		img2.css("opacity", 0);
+
 
 		var boy = $('<p id="boy_lived" style="position:absolute; z-index: 499;"> "The boy who lived" </p>');
 		boy.appendTo('.container-fluid');
@@ -175,11 +201,35 @@
 		boy.css("font-family", "'Shadows Into Light', cursive")	
 		boy.css("opacity", 0);
 
+		//Fade in all the projects.
+		$(".project").each(function(index, element) {
+			$(element).delay(200 * index).fadeTo(600,1);
+		});
+		$("#profilbild").fadeTo(1000,1);
+		$("#name").fadeTo(1000,1);
+		$("#description_text").fadeTo(1000,1);
+
+
+		// $.flip(OPTIONS, CALLBACK);
+		//$("flipped_picture").delay(1000).flip(true).delay(1000).flip(false);
+		/*      $("#flipper").flip({
+        axis: "y", // y or x
+        reverse: false, // true and false
+        forceHeight: true,
+        forceWidth: true,
+        front: 'auto',
+        trigger: "hover", // click or hover
+        speed: 5000
+      });*/
+		      //$("#flipped_picture").flip(false);
+
 		$('#hedwig').prop("volume", 0.0);
 
 
 		$("#harry").mouseleave( function() {
 			$("#harry").stop(true).fadeTo(200, 0);
+			//$("#albin_bergstrom").stop(true).fadeTo(200, 0);
+			//$("#name").stop(true).fadeTo(200, 1);
 			$("#description_text").stop(true).fadeTo(200, 1);
 			$("#boy_lived").stop(true).fadeTo(200, 0);
 			$("#hedwig").stop(true).animate({volume: 0.0}, 1000, function() {
@@ -190,11 +240,13 @@
 		});
 		$("#harry").mouseenter( function() {
 			$("#harry").fadeTo(200, 1);
+			//$("#albin_bergstrom").delay(7000).fadeTo(10000, 1);
+			//$("#name").delay(10000).fadeTo(5000, 0);
 			$("#description_text").fadeTo(200, 0);
 			$("#boy_lived").fadeTo(200, 1);
 			$('#hedwig').get(0).play();
 
-			$("#hedwig").stop(true).animate({volume: 0.2}, 6000);
+			$("#hedwig").stop(true).animate({volume: 0.15}, 6000);
 		});
 	});
 
