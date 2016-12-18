@@ -42,6 +42,8 @@
 </body>
 
 <script>
+	//FULKOD ÄR MITT LIV OK!??! tare lugnt. Vad gör du ens här? Du borde åka på tour istället för att sitta framför datorn!
+
 	var clicked = false;
 
 	$(document).ready( function() {
@@ -49,11 +51,6 @@
 		$("#windows").css("top", $("#infodiv").offset().top + $("#infodiv").height());
 
 		$("#maindiv").css("min-height", Math.max($("#windows").offset().top + $("#windows").height(), 507));
-
-		//$(window).resize(function() {
-			//$("#maindiv").css("left", abs($(window).width() - $("#maindiv").width())/2).css("min-height", $(window).height());
-			//$("#windows").css("left", $("#maindiv").width()/2 - $("#windows").width()/2 + 15);
-		//});
 
 		$("img").click(function(){
 			clicked = true;
@@ -65,17 +62,15 @@
 		});
 
 		$( document ).on("mousemove", function( event ) {
-			//$("#windows").css("left", $("#maindiv").width()/2 - $("#windows").width()/2 + 15);
 			if(clicked)
   				$("#knapp").css("left", event.pageX - $("#knapp").width()/2 + "px").css("top", event.pageY - $("#knapp").height()/2 + "px");
 		});
 
-		//$("#windows").delay(500).css("left", $("#maindiv").width()/2 - $("#windows").width()/2 + 15);
 
 	});
 
 	window.onload = function(){
-		console.log("hej");
 		$("#windows").css("left", $("#maindiv").width()/2 - $("#windows").width()/2 + 15);
 	};
+
 </script>
