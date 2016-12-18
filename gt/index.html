@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>Gamlingstour</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+	<div style="text-align: center;">
+		<div id="maindiv">
+			<div id="infodiv">
+				<h1> Gamlingstouren 2017 </h1>
+				<div id="brodtext">
+					<p>
+						Nu a fidosjf siofjios djrgodig jdorijdoirjgd goirgj doigfddfgh dhfgh gfh fgh fgh fgh fgh fgh fggjrd goij rgrd
+					</p>
+					<p>
+						Fsoijfio rdgo ritjhoirdjg thoij groidtjhoi dtfjhoi tjhoirgjhtfoij gefor fseoiejfosi jsefoi sfjo feij fesoi soij soefij fseoifjrdgoidj efoigjroigrdj goijirgjogirjgo rijg rd. Ggdfg rgdijgiodj rgiodjrgoi drgoi jdrgoi j.
+					</p>
+					<p>
+						Fersigjdiorgj odgjrd, 6 till 10 juli.
+					</p>
+					<p>
+						//Tourledningen
+					</p>
+				</div>
+			</div>
+
+			<img src="hotblasare.gif" height="400px" id="hotblasare">
+			<img src="num2.gif" height="400px" id="bjorn">
+			<img src="windows2.gif" height="150px" id="windows">
+
+
+		</div>
+	</div>
+
+	<button id="knapp"> Åk på tour </button>
+
+
+</body>
+
+<script>
+	var clicked = false;
+
+	$(document).ready( function() {
+		$("#windows").css("left", $("#maindiv").width()/2 - $("#windows").width()/2 + 15);
+		$("#maindiv").css("min-height", Math.max($(window).height(), 507));
+
+		//$(window).resize(function() {
+			//$("#maindiv").css("left", abs($(window).width() - $("#maindiv").width())/2).css("min-height", $(window).height());
+			//$("#windows").css("left", $("#maindiv").width()/2 - $("#windows").width()/2 + 15);
+		//});
+
+		$("img").click(function(){
+			clicked = true;
+			$("#knapp").css("opacity", 1).css("left", "100px").css("top", "100px");
+		});
+
+		$("#knapp").click(function() {
+   			window.location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1";
+		});
+
+		$( document ).on("mousemove", function( event ) {
+			if(clicked)
+  				$("#knapp").css("left", event.pageX - $("#knapp").width()/2 + "px").css("top", event.pageY - $("#knapp").height()/2 + "px");//text( "pageX: " + event.pageX + ", pageY: " + event.pageY );
+		});
+
+
+	});
+</script>
