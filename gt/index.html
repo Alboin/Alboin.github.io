@@ -45,7 +45,8 @@
 	var clicked = false;
 
 	$(document).ready( function() {
-		$("#windows").css("left", $("#maindiv").width()/2 - $("#windows").width()/2 + 15);
+		
+		$("#windows").delay(500).css("left", $("#maindiv").width()/2 - $("#windows").width()/2 + 15);
 		$("#windows").css("top", $("#infodiv").offset().top + $("#infodiv").height());
 
 		$("#maindiv").css("min-height", Math.max($("#windows").offset().top + $("#windows").height(), 507));
