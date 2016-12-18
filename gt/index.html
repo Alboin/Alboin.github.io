@@ -65,14 +65,14 @@
 		});
 
 		$( document ).on("mousemove", function( event ) {
-			$("#windows").css("left", $("#maindiv").width()/2 - $("#windows").width()/2 + 15);
+			//$("#windows").css("left", $("#maindiv").width()/2 - $("#windows").width()/2 + 15);
 			if(clicked)
   				$("#knapp").css("left", event.pageX - $("#knapp").width()/2 + "px").css("top", event.pageY - $("#knapp").height()/2 + "px");
 		});
 
-		$("#windows").delay(500).css("left", $("#maindiv").width()/2 - $("#windows").width()/2 + 15);
+		//$("#windows").delay(500).css("left", $("#maindiv").width()/2 - $("#windows").width()/2 + 15);
 
 	});
 
-	window.onload = function(){$("#windows").delay(500).css("left", $("#maindiv").width()/2 - $("#windows").width()/2 + 15);};
+	window.onload = function(){$("#windows").css("left", $("#maindiv").width()/2 - $("#windows").width()/2 + 15);};
 </script>
