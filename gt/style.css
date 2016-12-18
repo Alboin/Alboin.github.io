@@ -24,6 +24,10 @@ img#windows {
 	bottom: 30px;
 }
 
+button {
+	font-size: 20px;
+}
+
 #maindiv {
 	background-color: #fff5a4;
 	padding: 10px;
