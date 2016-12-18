@@ -10,13 +10,13 @@ img:hover {
 img#bjorn {
 	position: absolute;
 	right: 30px;
-	top: 80px;
+	top: 30px;
 }
 
 img#hotblasare {
 	position: absolute;
 	left: 30px;
-	top: 80px;
+	top: 30px;
 }
 
 img#windows {
@@ -30,7 +30,7 @@ img#windows {
 	margin: 0 auto;
 	width: 1000px;
 	position: relative;
-	min-height: 800px;
+
 }
 
 #infodiv {
