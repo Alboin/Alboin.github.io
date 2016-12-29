@@ -10,13 +10,13 @@ img:hover {
 img#bjorn {
 	position: absolute;
 	right: 30px;
-	top: 30px;
+	top: 50px;
 }
 
 img#hotblasare {
 	position: absolute;
 	left: 30px;
-	top: 30px;
+	top: 50px;
 }
 
 img#windows {
@@ -48,6 +48,8 @@ button {
 #brodtext {
 	background-color: white;
 	padding: 10px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 }
 
 #knapp {
@@ -66,7 +68,7 @@ h1 {
 p {
 	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	//text-align: left;
+	text-align: left;
 }
 
 body {
