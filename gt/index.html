@@ -8,27 +8,32 @@
 <body>
 	<div style="text-align: center; margin: 0px;">
 		<div id="maindiv">
-			<div id="infodiv">
-				<h1> -=: Gråstouren 2017 :=-</h1>
-				<div id="brodtext">
-					<p>
-						Nu är det äntligen dags för gråstour igen!
-					</p>
-					<p>
-						Vi kommer att åka från Musicum på torsdagskvällen den 6:e juli och sedan kommer man kunna flyga hem till Arlanda på måndagseftermiddagen den 10:e juli, eller åka med bussen hem för hemgång lite senare samma vecka. För de som behöver repa så kommer detta att ske från och med lunch den 6:e juli och då kanske det även kommer dyka upp någon liten överraskning.
-					</p>
-					<p>
-						
-						För att anmäla sig fyller man i <a href="https://docs.google.com/forms/d/e/1FAIpQLSfjD2xQ9JXiNcev3dGfmkSuTQKtQKOx5o5YGJKmQ9Ek2WJ4CA/viewform">detta formulär</a> (anmälan öppnar <br>2017-01-01), och inväntar svar från tourledningen. <br> Efter det betalar man in 1.000:- till 9159-685.826-7 (Skandiabanken) eller swishar till 070-6617700. Det är Björn Lagerström (Fröken Björn) som är betalningsmottagare, men dessa konton är specifikt framtagna för gamlingstouren, så betala inte till något annat konto tillhörande Fröken.
-					</p>
-					<p>
-						Total kostnad för resan kommer inte kunna fastställas förrän vi är en spelbar orkester (vi kommer inte boka några flygbiljetter hem förrän vi vet att vi är spelbara), men det kommer inte bli dyrare än 3.000:- inkl. flygresa hem (exkl. eventuella skulder till vår vänförening Baren-Baren, som kommer erbjudande rullande krogshow som vanligt under resan).
-					</p>
-					<p>
-						Vi ses på tour! <br>
-						//Greiseleitrarna
-					</p>
+			<div id="fuldiv">
 				</div>
+
+				<div id="infodiv">
+					<h1> -=: Gråstouren 2017 :=-</h1>
+					<div id="brodtext">
+						<p>
+							Nu är det äntligen dags för gråstour igen!
+						</p>
+						<p>
+							Vi kommer att åka från Musicum på torsdagskvällen den 6:e juli och sedan kommer man kunna flyga hem till Arlanda på måndagseftermiddagen den 10:e juli, eller åka med bussen hem för hemgång lite senare samma vecka. För de som behöver repa så kommer detta att ske från och med lunch den 6:e juli och då kanske det även kommer dyka upp någon liten överraskning.
+						</p>
+						<p>
+							
+							För att anmäla sig fyller man i <a href="https://docs.google.com/forms/d/e/1FAIpQLSfjD2xQ9JXiNcev3dGfmkSuTQKtQKOx5o5YGJKmQ9Ek2WJ4CA/viewform">detta formulär</a> (anmälan öppnar <br>2017-01-01), och inväntar svar från tourledningen. <br> Efter det betalar man in 1.000:- till 9159-685.826-7 (Skandiabanken) eller swishar till 070-6617700. Det är Björn Lagerström (Fröken Björn) som är betalningsmottagare, men dessa konton är specifikt framtagna för gamlingstouren, så betala inte till något annat konto tillhörande Fröken.
+						</p>
+						<p>
+							Total kostnad för resan kommer inte kunna fastställas förrän vi är en spelbar orkester (vi kommer inte boka några flygbiljetter hem förrän vi vet att vi är spelbara), men det kommer inte bli dyrare än 3.000:- inkl. flygresa hem (exkl. eventuella skulder till vår vänförening Baren-Baren, som kommer erbjudande rullande krogshow som vanligt under resan).
+						</p>
+						<p> <a href="deltagare.html">Här</a> finns nu även en lista över blåsare som anmält sig till touren, som vi kommer försöka hålla så uppdaterad som möjligt!
+						</p>
+						<p>
+							Vi ses på tour! <br>
+							//Greiseleitrarna
+						</p>
+					</div>
 			</div>
 
 			<img src="hotblasare.gif" height="400px" id="hotblasare">
@@ -66,9 +71,18 @@
 
 		$( document ).on("mousemove", function( event ) {
 			$("#windows").css("left", $("#maindiv").width()/2 - $("#windows").width()/2 + 15);
+
 			if(clicked)
   				$("#knapp").css("left", event.pageX - $("#knapp").width()/2 + "px").css("top", event.pageY - $("#knapp").height()/2 + "px");
 		});
+
+
+
+		$("#fuldiv").css("left", $("#infodiv").offset().left - $("#maindiv").offset().left - 10);
+		$("#fuldiv").css("top", $("#infodiv").offset().top - 18);
+		$("#fuldiv").css("height", $("#infodiv").height() + 20);
+
+
 
 
 	});

@@ -29,10 +29,26 @@ button {
 }
 
 #maindiv {
-	background-color: #fff5a4;
+	background-color: white;
 	padding: 10px;
 	margin: 0 auto;
 	width: 1000px;
+	position: relative;
+
+}
+
+#fuldiv {
+	background-color: #fff5a4;
+	position: absolute;
+	width: 480px;
+	height: 1000px;
+}
+
+#maindiv2 {
+	background-color: #fff5a4;
+	padding: 10px;
+	margin: 0 auto;
+	width: 460px;
 	position: relative;
 
 }
@@ -45,17 +61,46 @@ button {
 	width: 460px;
 }
 
+#infodiv2 {
+	background-color: #fffbd7;
+	position: absolute;
+	left: 10px; //220 + 30 + 30
+	top: 30px;
+	width: 460px;
+}
+
 #brodtext {
 	background-color: white;
 	padding: 10px;
 	padding-top: 1px;
 	padding-bottom: 1px;
+	padding: 15px;
 }
 
 #knapp {
 	opacity: 0;
 	position: absolute;
 	z-index: 100;
+}
+
+.list_element {
+	position: relative;
+	height:50px;
+	background-color: #fffbd7;
+	border: solid 3px #eee5a4;
+	margin-top: 5px;
+}
+
+.portrait {
+	position: absolute;
+	left: 0px;
+}
+
+.person_text {
+	position: absolute;
+	margin: 10px;
+	left: 60px;
+	text-align: left;
 }
 
 h1 {
@@ -65,10 +110,24 @@ h1 {
 
 }
 
+h2 {
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+}
+
 p {
 	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	text-align: left;
+	margin-top: 0px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	border: solid, black;
 }
 
 body {

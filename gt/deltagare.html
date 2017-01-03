@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>Gråstour</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+	<div style="text-align: center; margin: 0px;">
+		<div id="maindiv2">
+			<div id="infodiv2">
+				<h1> Anmälda till touren </h1>
+				<div id="brodtext">
+
+				<!-- Copy paste funkar bra, right Cleese? Varför har du inte anmält dig än? -->
+
+					<div class="list_element">
+						<img class="portrait" src="portraits/albin.png" width="50px"> 
+						<p class=person_text><b>Albin Bergström</b> <br>
+						Saxsekten
+						</p>
+					</div>
+
+					<div class="list_element">
+						<img class="portrait" src="portraits/ponk.png" width="50px"> 
+						<p class=person_text><b>Henrik "Ponk" Flordal</b> <br>
+						Baletten
+						</p>
+					</div>
+
+					<div class="list_element">
+						<img class="portrait" src="portraits/froken.png" width="50px"> 
+						<p class=person_text><b>Björn "Fröken Björn" Lagerström</b> <br>
+						Baletten
+						</p>
+					</div>
+
+					<div class="list_element">
+						<img class="portrait" src="portraits/sofanders.png" width="50px"> 
+						<p class=person_text><b>Anders "SOF-Anders" Rydén</b> <br>
+						Baletten
+						</p>
+					</div>
+
+					<div class="list_element">
+						<img class="portrait" src="portraits/fimpen.png" width="50px"> 
+						<p class=person_text><b>Johan "Fimpen" Larsson</b> <br>
+						Kompet
+						</p>
+					</div>
+
+					<div class="list_element">
+						<img class="portrait" src="portraits/smultron.png" width="50px"> 
+						<p class=person_text><b>Henrik "Smultronblomman" Engström</b> <br>
+						Saxsekten
+						</p>
+					</div>
+
+					<div class="list_element">
+						<img class="portrait" src="portraits/niten.png" width="50px"> 
+						<p class=person_text><b>Niten Olofsson</b> <br>
+						Saxsekten
+						</p>
+					</div>
+
+					<div class="list_element">
+						<img class="portrait" src="portraits/bamse.png" width="50px"> 
+						<p class=person_text><b>Mattias "Bamse" Olsson</b> <br>
+						Kompet
+						</p>
+					</div>
+
+					<div class="list_element">
+						<img class="portrait" src="portraits/heinz.png" width="50px"> 
+						<p class=person_text><b>Henrik "Heinz" Norman</b> <br>
+						Kompet
+						</p>
+					</div>
+
+					<div class="list_element">
+						<img class="portrait" src="portraits/shetype.png" width="50px"> 
+						<p class=person_text><b>Julia "She-Type" Engström</b> <br>
+						Baletten
+						</p>
+					</div>
+
+					<div class="list_element">
+						<img class="portrait" src="portraits/90niklas.png" width="50px"> 
+						<p class=person_text><b>Erik "90-Niklas" Andersson</b> <br>
+						Saxsekten
+						</p>
+					</div>
+
+					<div class="list_element">
+						<img class="portrait" src="portraits/rump.png" width="50px"> 
+						<p class=person_text><b>Martin "Rump" Sjökvist</b> <br>
+						Baletten
+						</p>
+					</div>
+
+					<div class="list_element">
+						<img class="portrait" src="portraits/etype.png" width="50px"> 
+						<p class=person_text><b>Simon "E-Type" Hild</b> <br>
+						Basun
+						</p>
+					</div>
+
+					<div class="list_element">
+						<img class="portrait" src="portraits/hugo.png" width="50px"> 
+						<p class=person_text><b>Erik "Hugo" Lindblad</b> <br>
+						Kompet
+						</p>
+					</div>
+
+					<div class="list_element">
+						<img class="portrait" src="portraits/isak.png" width="50px"> 
+						<p class=person_text><b>Isak Jonsson</b> <br>
+						Basun
+						</p>
+					</div>
+
+
+				</div>
+				<h1> Aktiva i kölistan </h1>
+				<div id="brodtext">
+
+					<div class="list_element">
+						<img class="portrait" src="portraits/janne.png" width="50px"> 
+						<p class=person_text><b>Josefin "Janne" Ringenson </b> <br>
+						Trumpet
+						</p>
+					</div>
+
+
+					<div class="list_element" id="last_element">
+						<img class="portrait" src="portraits/bajs.png" width="50px"> 
+						<p class=person_text><b>Sandra "Bajssandra" Strömstedt </b> <br>
+						Klarinett
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+			<!--<img src="hotblasare.gif" height="400px" id="hotblasare">
+			<img src="num2.gif" height="400px" id="bjorn">
+			<img src="windows2.gif" height="150px" id="windows">-->
+
+
+		</div>
+	</div>
+
+	<button id="knapp"> Åk på tour </button>
+
+
+</body>
+
+<script>
+	//FULKOD ÄR MITT LIV OK!??! tare lugnt. Vad gör du ens här? Du borde åka på tour istället för att sitta framför datorn!
+
+	var clicked = false;
+
+	$(document).ready( function() {
+
+
+		$("#maindiv2").css("height", $("#last_element").offset().top + $("#last_element").height() + 5);
+
+		
+		//$("#windows").css("top", $("#infodiv").offset().top + $("#infodiv").height());
+
+		//$("#maindiv").css("min-height", Math.max($("#windows").offset().top + $("#windows").height(), 507));
+
+		$("img").click(function(){
+			clicked = true;
+			$("#knapp").css("opacity", 1).css("left", "100px").css("top", "100px");
+		});
+
+		$("#knapp").click(function() {
+   			window.location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1";
+		});
+
+		$( document ).on("mousemove", function( event ) {
+			$("#windows").css("left", $("#maindiv").width()/2 - $("#windows").width()/2 + 15);
+
+			if(clicked)
+  				$("#knapp").css("left", event.pageX - $("#knapp").width()/2 + "px").css("top", event.pageY - $("#knapp").height()/2 + "px");
+		});
+
+
+	});
+
+	window.onload = function(){
+		$("#windows").css("left", $("#maindiv").width()/2 - $("#windows").width()/2 + 15);
+	};
+
+</script>
