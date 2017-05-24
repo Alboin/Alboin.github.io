@@ -9,7 +9,7 @@
 	<div style="text-align: center; margin: 0px;">
 		<div id="maindiv2">
 			<div id="infodiv2">
-				<h1> Anmälda till touren </h1>
+				<h1 id="header"> Anmälda till touren </h1>
 				<div id="brodtext">
 
 				<!-- Copy paste funkar bra, right Cleese? Varför har du inte anmält dig än? -->
@@ -303,10 +303,17 @@
 						</p>
 					</div>
 
-					<div class="list_element" id="last_element">
+					<div class="list_element">
 						<img class="portrait" src="portraits/howe.png" width="50px"> 
 						<p class=person_text><b>Fredrik "Hora" Howe </b> <br>
 						Trumpet
+						</p>
+					</div>
+
+					<div class="list_element" id="last_element">
+						<img class="portrait" src="portraits/pernilla.png" width="50px"> 
+						<p class=person_text><b>Pernilla de-Wall Larsson </b> <br>
+						Baletten
 						</p>
 					</div>
 
@@ -356,6 +363,11 @@
 			if(clicked)
   				$("#knapp").css("left", event.pageX - $("#knapp").width()/2 + "px").css("top", event.pageY - $("#knapp").height()/2 + "px");
 		});
+
+		var headerText = $("#header").text();
+		$("#header").text(headerText + "(" + $(".list_element").length + " st)").css("font-size", 38);
+
+
 
 
 	});
