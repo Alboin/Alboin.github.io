@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="BlottarTuban.ico">
+
+    <title>Off Canvas Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    p {
+      text-align: center;
+      font-size: 60px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Luciafesten</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="#">Biljetter</a></li>
+            <li class="active"><a href="utrikiska.html">Utrikiska</a></li>
+            <li><a href="http://litheblas.org/sv/">LiTHe Blås hemsida</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </div><!-- /.navbar -->
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-xs-12">
+          <p class="pull-right visible-xs">
+          </p>
+          <div class="jumbotron">
+            <img class="jumbotron-img" src="EventBanner.jpg">
+            <!--<h1>Luciafesten!</h1>
+            <p>Hallå!</p>-->
+          </div>
+          <div class="container">
+            <p id="demo"></p>
+
+            <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Jan 5, 2018 15:37:25").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+    
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+    
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+    
+            // If the count down is over, write some text 
+            if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+          }, 1000);
+          </script>
+            <h2>Luciafesten!</h2>
+              <h4>Hej och välkommna till årets Luciafest! Detta kommer bli skoj, minst sagt!</h4>
+                <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <div class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                          <h4>Luciageneralerna har ordet</h4>
+                          <p>Julen står snart för dörren vilket självfallet betyder att det är
+                          dags för LiTHe Blås årliga Luciafest! Här har du en fest som
+                          inte liknar någon annan du tidigare varit på.
+                          </p>
+                          <div class="row text-center">
+                            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                          </div> 
+                        </a>
+                      </div>
+                    </div>
+                  <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">I Gasquen kan du begå musikaliskt självmord till vår karaoke med
+                    liveband. Uppskattar du inte harakirin, kan du alltid besöka någon
+                    av de kul små grejer som finns väl utplacerade runtom i Kårallen.
+                    Annars kan du alltid ta en öl eller fem.
+                    I år gästas vi av Lusen Big Band – universitetets eget storband, Red
+                    Shag Vinyl som vänder plattor natten lång och direkt från Tyskland
+                    har vi flugit in Helmut Jederknüller mit seinem Super Stereo à Gogo
+                    Orchester som kommer att bjuda på grym musik under hela kvällen
+                    medan ni upptäcker Kårallen på nytt.
+                    Innan Luciafesten har ni även möjlighet att gå på den sittning som
+                    hålls i anslutning till festen. Maten får man gissa sig till! En glad
+                    mage och en garanterat trevlig förfest till kvällen utlovas.
+                    Portarna till Kårallen slås upp redan vid 20:00. Var där i tid, är vår
+                    rekommendation! Har du några frågor gällande Luciafesten, kan du
+                    alltid komma förbi Blåsrummet i Kårallen– det sitter nästan alltid
+                    någon blåsare där som kan svara.
+                    Med vänliga hälsningar från Albin, Cleese och E-Type.</div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                        <h4>Om festen</h4>
+                        <p>Hej hej</p>
+                        <div class="row text-center">
+                          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                        </div> 
+                      </a>
+                    </div>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <h4>Julsittning</h4>
+                      <p>Nygammalt för detta år är att det kommer att hållas en fantastisk julsittning i Gasquen. Här   kommer det bjudas på många av julens härligheter och underbar julstämning utlovas.
+                      </p>
+                      <h4>Fin eller finurlig</h4>
+                      <p>Klädkoden är fin eller finurlig. Hur tolkar du det? Ja, vi hoppas få se just dig i de mest perfekta temakläderna eller kanske i den finaste galaklänningen man någonsin skådat.
+                      </p>
+                      <h4>Paket</h4>
+                      <p>Ta gärna med dig ett fyndigt paket till Kårallen. Värdet bör vara 20:-. Väl på plats lämnar du in ditt paket, men glöm inte att ta med ett nytt ut igen när du lämnar festen för denna gång.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                        <h4>Om festen</h4>
+                        <p>Hej hej</p>
+                        <div class="row text-center">
+                          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                        </div> 
+                      </a>
+                    </div>
+                  </div>
+                  <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <h4>Julsittning</h4>
+                      <p>Nygammalt för detta år är att det kommer att hållas en fantastisk julsittning i Gasquen. Här   kommer det bjudas på många av julens härligheter och underbar julstämning utlovas.
+                      </p>
+                      <h4>Fin eller finurlig</h4>
+                      <p>Klädkoden är fin eller finurlig. Hur tolkar du det? Ja, vi hoppas få se just dig i de mest perfekta temakläderna eller kanske i den finaste galaklänningen man någonsin skådat.
+                      </p>
+                      <h4>Paket</h4>
+                      <p>Ta gärna med dig ett fyndigt paket till Kårallen. Värdet bör vara 20:-. Väl på plats lämnar du in ditt paket, men glöm inte att ta med ett nytt ut igen när du lämnar festen för denna gång.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                        <h4>Om festen</h4>
+                        <p>Hej hej</p>
+                        <div class="row text-center">
+                          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                        </div> 
+                      </a>
+                    </div>
+                  </div>
+                  <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <h4>Julsittning</h4>
+                      <p>Nygammalt för detta år är att det kommer att hållas en fantastisk julsittning i Gasquen. Här   kommer det bjudas på många av julens härligheter och underbar julstämning utlovas.
+                      </p>
+                      <h4>Fin eller finurlig</h4>
+                      <p>Klädkoden är fin eller finurlig. Hur tolkar du det? Ja, vi hoppas få se just dig i de mest perfekta temakläderna eller kanske i den finaste galaklänningen man någonsin skådat.
+                      </p>
+                      <h4>Paket</h4>
+                      <p>Ta gärna med dig ett fyndigt paket till Kårallen. Värdet bör vara 20:-. Väl på plats lämnar du in ditt paket, men glöm inte att ta med ett nytt ut igen när du lämnar festen för denna gång.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                        <h4>Om festen</h4>
+                        <p>Hej hej</p>
+                        <div class="row text-center">
+                          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                        </div> 
+                      </a>
+                    </div>
+                  </div>
+                  <div id="collapse5" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <h4>Julsittning</h4>
+                      <p>Nygammalt för detta år är att det kommer att hållas en fantastisk julsittning i Gasquen. Här   kommer det bjudas på många av julens härligheter och underbar julstämning utlovas.
+                      </p>
+                      <h4>Fin eller finurlig</h4>
+                      <p>Klädkoden är fin eller finurlig. Hur tolkar du det? Ja, vi hoppas få se just dig i de mest perfekta temakläderna eller kanske i den finaste galaklänningen man någonsin skådat.
+                      </p>
+                      <h4>Paket</h4>
+                      <p>Ta gärna med dig ett fyndigt paket till Kårallen. Värdet bör vara 20:-. Väl på plats lämnar du in ditt paket, men glöm inte att ta med ett nytt ut igen när du lämnar festen för denna gång.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                        <h4>Om festen</h4>
+                        <p>Hej hej</p>
+                        <div class="row text-center">
+                          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                        </div> 
+                      </a>
+                    </div>
+                  </div>
+                  <div id="collapse6" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <h4>Julsittning</h4>
+                      <p>Nygammalt för detta år är att det kommer att hållas en fantastisk julsittning i Gasquen. Här   kommer det bjudas på många av julens härligheter och underbar julstämning utlovas.
+                      </p>
+                      <h4>Fin eller finurlig</h4>
+                      <p>Klädkoden är fin eller finurlig. Hur tolkar du det? Ja, vi hoppas få se just dig i de mest perfekta temakläderna eller kanske i den finaste galaklänningen man någonsin skådat.
+                      </p>
+                      <h4>Paket</h4>
+                      <p>Ta gärna med dig ett fyndigt paket till Kårallen. Värdet bör vara 20:-. Väl på plats lämnar du in ditt paket, men glöm inte att ta med ett nytt ut igen när du lämnar festen för denna gång.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                        <h4>Om festen</h4>
+                        <p>Hej hej</p>
+                        <div class="row text-center">
+                          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                        </div> 
+                      </a>
+                    </div>
+                  </div>
+                  <div id="collapse7" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <h4>Julsittning</h4>
+                      <p>Nygammalt för detta år är att det kommer att hållas en fantastisk julsittning i Gasquen. Här   kommer det bjudas på många av julens härligheter och underbar julstämning utlovas.
+                      </p>
+                      <h4>Fin eller finurlig</h4>
+                      <p>Klädkoden är fin eller finurlig. Hur tolkar du det? Ja, vi hoppas få se just dig i de mest perfekta temakläderna eller kanske i den finaste galaklänningen man någonsin skådat.
+                      </p>
+                      <h4>Paket</h4>
+                      <p>Ta gärna med dig ett fyndigt paket till Kårallen. Värdet bör vara 20:-. Väl på plats lämnar du in ditt paket, men glöm inte att ta med ett nytt ut igen när du lämnar festen för denna gång.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+                        <h4>Om festen</h4>
+                        <p>Hej hej</p>
+                        <div class="row text-center">
+                          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                        </div> 
+                      </a>
+                    </div>
+                  </div>
+                  <div id="collapse8" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <h4>Julsittning</h4>
+                      <p>Nygammalt för detta år är att det kommer att hållas en fantastisk julsittning i Gasquen. Här   kommer det bjudas på många av julens härligheter och underbar julstämning utlovas.
+                      </p>
+                      <h4>Fin eller finurlig</h4>
+                      <p>Klädkoden är fin eller finurlig. Hur tolkar du det? Ja, vi hoppas få se just dig i de mest perfekta temakläderna eller kanske i den finaste galaklänningen man någonsin skådat.
+                      </p>
+                      <h4>Paket</h4>
+                      <p>Ta gärna med dig ett fyndigt paket till Kårallen. Värdet bör vara 20:-. Väl på plats lämnar du in ditt paket, men glöm inte att ta med ett nytt ut igen när du lämnar festen för denna gång.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+                        <h4>Om festen</h4>
+                        <p>Hej hej</p>
+                        <div class="row text-center">
+                          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                        </div> 
+                      </a>
+                    </div>
+                  </div>
+                  <div id="collapse9" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <h4>Julsittning</h4>
+                      <p>Nygammalt för detta år är att det kommer att hållas en fantastisk julsittning i Gasquen. Här   kommer det bjudas på många av julens härligheter och underbar julstämning utlovas.
+                      </p>
+                      <h4>Fin eller finurlig</h4>
+                      <p>Klädkoden är fin eller finurlig. Hur tolkar du det? Ja, vi hoppas få se just dig i de mest perfekta temakläderna eller kanske i den finaste galaklänningen man någonsin skådat.
+                      </p>
+                      <h4>Paket</h4>
+                      <p>Ta gärna med dig ett fyndigt paket till Kårallen. Värdet bör vara 20:-. Väl på plats lämnar du in ditt paket, men glöm inte att ta med ett nytt ut igen när du lämnar festen för denna gång.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+                        <h4>Schema!</h4>
+                        <p>Bla bla bla kul!</p>
+                        <div class="row text-center">
+                          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div id="collapse10" class="panel-collapse collapse">
+                    <div class="panel-body"><p>17:30 Fördrink till Julsittningen</p><p> 20:00 Dörrarna öppnas och Red Shag Vinyl vänder plattor</p><p> 20:45 Lusen Big Band</p><p>23:00 LiTHe Blås</p><p>23:40 Dans kring granen</p><p>00:00 Luciatåg</p><p>00:20 Helmut Jederknüller mit seinem Super Stereo à Gogo Orchester</p>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; LiThe Blås 2017</p>
+      </footer>
+
+    </div><!--/.container-->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="offcanvas.js"></script>
+  </body>
+</html>
