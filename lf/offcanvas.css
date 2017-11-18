@@ -161,7 +161,7 @@ h4.box-header
 p
 {
   color: black;
-  font-family: 'MV Boli';  
+  font-family: 'MVBoli';  
 }
 
 .text-white
@@ -197,6 +197,12 @@ img.ikon
   font-family: blaset;
   src: url("Old English Five.ttf");
 }
+
+@font-face {
+  font-family: MVBoli;
+  src: url("mvboli.ttf");
+}
+
 
 .lithe-blas
 {
