@@ -1,0 +1,34 @@
+html, 
+body {
+  padding-top: 50px;
+  background-image: url("woodBackground.jpg");
+  background-size: contain;  
+  background-repeat:   repeat;
+}
+.text {
+	text-align: center;
+	font-size: 3em;
+}
+.text-small {
+  text-align: center;
+  font-size: 2em;
+}
+.container {
+	color: white;
+}
+.clock {
+	text-align: center;
+	font-size: 6em;
+	padding-bottom: 40px;
+}
+.navbar-inverse .navbar-brand {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: black;
+}
+.navbar-inverse {
+  /*background-color: #fff5a4;*/
+  background-color: #ad3134;

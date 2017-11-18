@@ -11,7 +11,7 @@
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     
-    <title>Off Canvas Template for Bootstrap</title>
+    <title>Luciafesten</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -44,7 +44,7 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Hem</a></li>
-            <li><a href="#biljetthemsida">Biljetter</a></li>
+            <li><a href="countdown.html">Köp biljett</a></li>
             <li><a href="utrikiska.html">Information in English</a></li>
             <li><a href="http://litheblas.org/sv/">LiTHe Blås hemsida</a></li>
           </ul>
@@ -96,36 +96,32 @@
               clearInterval(x);
               document.getElementById("demo").innerHTML = "NU!!";
               }
-            }, 1000);
-            </script>
+              }, 1000);
+              </script>
             </div>
-            <!--<div id="clockdiv">
-              Days: <span class="days"></span><br>
-              Hours: <span class="hours"></span><br>
-              Minutes: <span class="minutes"></span><br>
-              Seconds: <span class="seconds"></span>
-            </div>-->
             
                 <div class="panel-group" id="accordion">
                   <div class="panel panel-default">
                     <div class="panel-heading">
-                      <div class="panel-title">
+                        <div class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                          <h4 class="box-header">Luciageneralerna har ordet</h4>
-                          <p class="text-white">Julen står snart för dörren vilket självfallet betyder att det är
-                          dags för LiTHe Blås årliga Luciafest! Låt oss inleda med att luciageneralerna tar ton.
-                          </p>
+                            
+                        
+                        <h4 class="box-header"><img class="ikon" src="Ikoner\granGreen.png">Luciageneralerna har ordet </h4>
+                          
                           <div class="row text-center">
                             <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                           </div> 
+                          
                         </a>
                       </div>
                     </div>
                   <div id="collapse1" class="panel-collapse collapse">
                     <div class="panel-body">
-                      <p>
+                      <img class="generalerna" src="Generalerna, hoppbild.jpg">
+                      <p id="generalerText">
                         Varmt välkomna till Luciafesten, i vår mening årets mysigaste fest. Den nionde december svidas
-                        Kårallen om till julstass, komplett med dekor på alla våningsplan och en fyra meter hög julgran i Baljan. Runt om i huset kommer ett antal Kul Små GrejerTM finnas utplacerade. Exempelvis TubaHero, ett GuitarHero spel du styr med en tuba och vårt mystiska fotobås.
+                        Kårallen om till julstass, komplett med dekor på alla våningsplan och en fyra meter hög julgran i Baljan. Runt om i huset kommer ett antal Kul Små Grejer™ finnas utplacerade. Exempelvis Tuba Hero, ett Guitar Hero spel du styr med en tuba, och vårt mystiska fotobås.
                       </p>
                       <p>
                         Kvällen inleds med en julsittning i Gasquen innan själva festen öppnar vid åtta. Kvällen kommer att vara fylld av musik och vi presenterar stolt inte mindre än fem live-akter: Lusen Big Band, LiU-bandet, LiTHe Blås, Helmut Jederknüller mit seinem Super Stereo à Gogo Orchester samt D-bandet. Som om inte det vore nog kan man dessutom som festbesökare själv bidra till musiken tillsammans med vårt Harakiri-band, karaoke ackompanjerat av vårt skickliga liveband.
@@ -134,12 +130,11 @@
                        Andra stämningshöjande inslag är temabarer, luciatåg, dans runt granen och julklappsbyte. För att hinna uppleva allt som händer rekommenderar vi stark att ni kommer tidigt till festen för att inte missa något. Så lämna ovven hemma, ta på dig din finaste julutstyrsel (kom i klänning/kavaj eller varför inte som snöflinga, julgranskula eller luciakrona) och kom till Kårallen den 9/12 för en fest du sent kommer att glömma.
                       </p>
                       <p>
-                        Luciageneralerna 2017
+                        Luciageneralerna
                       </p>
-                      <p>
+                      <p id="generalerNamn">
                         Gustav, Tova och Sofia
                       </p>
-                      <img class="generalerna" src="Generalerna, hoppbild.jpg">
                     </div>
                   </div>
                 </div>
@@ -147,10 +142,7 @@
                   <div class="panel-heading">
                     <div class="panel-title">
                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                        <h4 class="box-header">Om festen</h4>
-                        <p class="text-white">
-                          Detta är inte bara en vanlig fest, nej nej. Luciafesten har mycket att bjuda på; allt från julsittning, dans runt julgran och paketutdelning.
-                        </p>
+                        <h4 class="box-header"><img class="ikon" src="Ikoner\dansGreen.png">Om festen</h4>
                         <div class="row text-center">
                           <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                         </div> 
@@ -159,15 +151,22 @@
                   </div>
                   <div id="collapse2" class="panel-collapse collapse">
                     <div class="panel-body">
-                      <h4>Julsittning</h4>
-                      <p>Nygammalt för detta år är att det kommer att hållas en fantastisk julsittning i Gasquen. Här   kommer det bjudas på många av julens härligheter och underbar julstämning utlovas.
-                      </p>
                       <h4>Fin eller finurlig</h4>
-                      <p>Klädkoden är fin eller finurlig. Hur tolkar du det? Ja, vi hoppas få se just dig i de mest perfekta temakläderna eller kanske i den finaste galaklänningen man någonsin skådat.
+                      <p>Med klädkoden fin eller finurlig ber vi dig att lämna ovven hemma och istället ta fram din gamla julgransdräkt som ligger längst bak i garderoben. Men misströsta inte om den verkar vara försvunnen, för det fungerar lika bra med långklänning eller en av dina alla julkostymer. Det viktiga är att du känner dig fin… eller finurlig!
                       </p>
-                      <h4>Paket</h4>
+                      <h4>Paketbyte</h4>
                       <p>Ta gärna med dig ett fyndigt paket till Kårallen. Värdet bör vara 20:-. Väl på plats lämnar du in ditt paket, men glöm inte att ta med ett nytt ut igen när du lämnar festen för denna gång.
                       </p>
+                      <h4>KSG - Kul Små Grejer™</h4>
+                      <p>
+                        Under festens gång kommer du garanterat springa på en del KSG, Kul Små Grejer™, i Kårallen. Då gäller det att stanna upp, fokusera och vara beredd med både intelligenta strategier och ren råstyrka för här väntar en utmaning. Ta dina kompisar till hjälp och se vem som klarar sig bäst när ni tillsammans utforskar Kårallen.
+                      </p>
+                      <h4>Harakiri - Musikalist självmord</h4>
+                      <p>
+                        I Gasquen utlovas det karaoke till LiTHe Blås eget liveband, Harakiri! Med ett stort utbud av låtar så finns det något för alla att sjunga med i. Tveka inte att ta plats på scen, oavsett hur dina senaste sånginsatser i duschen har varit, att sjunga vackert är ändå inte själva tanken!
+                      </p>
+                      <h4>Julsittning</h4>
+                      <p>Innan Kårallens dörrar öppnas upp för Luciafest hålls en magisk julsittning. Här bjuds det på många av julens härligheter och underbar julstämning utlovas.
                     </div>
                   </div>
                 </div>
@@ -175,8 +174,7 @@
                   <div class="panel-heading">
                     <div class="panel-title">
                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                        <h4 class="box-header">Schema</h4>
-                        <p class="text-white">På Luciafesten händer det en hel del roliga grejer, kolla in schemat vettja!</p>
+                        <h4 class="box-header"><img class="ikon" src="Ikoner\clockGreen.png">Schema</h4>
                         <div class="row text-center">
                           <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                         </div> 
@@ -185,18 +183,28 @@
                   </div>
                   <div id="collapse3" class="panel-collapse collapse">
                     <div class="panel-body">
-                      <p>17:30 Sittningsgäster välkomnas med fördrink</p>
-                      <p>18:00 Sittningen inleds i Gasquen</p>
-                      <p>20:00 Kårrallens dörrar öppnas upp för övriga gäster</p>
-                      <p>21:00 Lusen Big Band entrar Baljan</p>
-                      <p>21:30 Harakiri drar igång i Gasquen</p>
-                      <p>22:15 LiU-bandet tar över scenen i Baljan</p>
-                      <p>23:30 LiTHe Blås stormar Baljan</p>
-                      <p>00:00 Dans runt gran och Luciatåg i Baljan</p>
-                      <p>00:30 Helmut Jederknüller mit seinem Super Stereo à Gogo Orchester river igång i Gasquen</p>
-                      <p>01:15 D-bandet rockar loss i Baljan</p>
-                      <p>01:30 Harakiri drar åter igång i Gasquen</p>
-                      <p>03:00 Luciafesten är över för i år och nedräkningen börjar till 2018</p>
+                      <p>17:30</p>
+                      <p> Sittningsgäster välkomnas med fördrink</p>
+                      <p>20:00 </p>
+                      <p>Kårrallens dörrar öppnas upp för övriga gäster</p>
+                      <p>21:00</p> 
+                      <p>Lusen Big Band entrar Baljan</p>
+                      <p>21:30</p> 
+                      <p>Harakiri drar igång i Gasquen</p>
+                      <p>22:15</p> 
+                      <p>LiU-bandet tar över scenen i Baljan</p>
+                      <p>23:30</p> 
+                      <p>LiTHe Blås stormar Baljan</p>
+                      <p>00:00</p> 
+                      <p>Dans runt gran och Luciatåg i Baljan</p>
+                      <p>00:30</p> 
+                      <p>Helmut Jederknüller mit seinem Super Stereo à Gogo Orchester river igång i Gasquen</p>
+                      <p>01:15</p> 
+                      <p>D-bandet rockar loss i Baljan</p>
+                      <p>01:30</p> 
+                      <p>Harakiri drar åter igång i Gasquen</p>
+                      <p>03:00</p> 
+                      <p>Luciafesten är över för i år och nedräkningen börjar till Luciafesten 2018</p>
                     </div>
                   </div>
                 </div>
@@ -204,8 +212,7 @@
                   <div class="panel-heading">
                     <div class="panel-title">
                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                        <h4 class="box-header">Biljetter</h4>
-                        <p class="text-white">En biljett måste du ha, annars blir det ju ingen fest!</p>
+                        <h4 class="box-header"><img class="ikon" src="Ikoner\ticketsGreen.png">Biljetter</h4>
                         <div class="row text-center">
                           <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                         </div> 
@@ -218,11 +225,7 @@
                         Biljettsläpp Måndag 4 December
                       </h4>
                       <p>
-                        12:15 colosseum / TÄPPAN.
-                      </p>
-                      <p>
-                        Biljetter till årets juligaste festkväll kommer att släppas i samband
-                        med pompa, ståt och det oerhört väljudande LiTHe Blås.
+                        Biljettsläppet för årets juligaste fest sker online, wow! <a href="countdown.html">Webshopen</a> öppnas upp i samband med att LiTHe Blås river av en riktig dunderspelning i Colloseum. Spelningen kommer äga rum någon gång mellan 12 och 13. Kom dit och titta på så får du veta exakt när biljetterna släpps, annars gäller det att vara beredd här på hemsidan!
                       </p>
                       <h4>
                         Priser
@@ -241,7 +244,7 @@
                       <P>
                         Festbiljett: 125Kr (115Kr för kårmedlemmar)
                       </p>
-                      <a href="#biljetthemsida" class="btn btn-outline-biljett" role="button">Köp biljett!</a>
+                      <a href="countdown.html" class="btn btn-outline-biljett" role="button">Köp biljett!</a>
                       <!--<button type="button" class="btn btn-outline-biljett">Köp biljett!</button>-->
                     </div>
                   </div>
@@ -250,8 +253,7 @@
                   <div class="panel-heading">
                     <div class="panel-title">
                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-                        <h4 class="box-header">Temabarer</h4>
-                        <p class="text-white">För att göra det extra festligt med sprit kan du gå till våra olika temabarer som kommer vara utplacerade i Kårallen</p>
+                        <h4 class="box-header"><img class="ikon" src="Ikoner\drinkGreen.png">Temabarer</h4>
                         <div class="row text-center">
                           <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                         </div> 
@@ -260,85 +262,14 @@
                   </div>
                   <div id="collapse5" class="panel-collapse collapse">
                     <div class="panel-body">
-                      <h4>Temabar ett</h4>
-                      <p>Tema barer hit, och temabarer dit</p>
-                      <h4>Temabar två</h4>
-                      <p>Tema barer hit, och temabarer dit</p>
-                      <h4>Temabar tre</h4>
-                      <p>Tema barer hit, och temabarer dit</p>
-                      <h4>Temabar fyra</h4>
-                      <p>Tema barer hit, och temabarer dit</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
-                        <h4 class="box-header">Vilka <span class=special-character>ä</span>r <span class=lithe-blas>LiTHe Blås</span> egentligen?</h4>
-                        <p class="text-white">
-                          Någon gång har du säkert hört LiTHe Blås spela och vet att
-                          fartfylld tokjazz är orkesterns grej. Kanske har du också sett
-                          LiTHe Blås i det mystiska rummet mitt i baljankön. Men vet du
-                          egentligen vad som händer i föreningen under ett år?
-                        </p>
-                        <div class="row text-center">
-                          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                        </div> 
-                      </a>
-                    </div>
-                  </div>
-                  <div id="collapse6" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <h4>VSR</h4>
-                      <p>
-                        Fest från morgon till kväll med livemusik
-                        och pardans. I mitten hinner vi även med en
-                        spelning för alla tävlingslystna i Vallamasivet.
-                      </p>
-                      <h4>Valborg</h4>
-                      <p>
-                        Frukost i massor, marscha genom stan och
-                        festa på kvällen. Tyvärr hinner vi inte titta på
-                        elden under vårt fullspäckade schema.
-                      </p>
-                      <h4>SOF</h4>
-                      <p>
-                        Vartannat år arrangeras SOF,
-                        studentorkesterfestivalen, och LiTHe Blås
-                        spelar för fullt tillsammans med massa andra
-                        orkestrar. En halv veckas dunderfest!
-                      </p>
-                      <h4>Eurotour</h4>
-                      <p>
-                        Touren är en upplevelse få förunnat. En busslast
-                        med blåsare ger sig iväg ut i Europa. Efter ca 10
-                        dagar av weissbier, små byar, många sånger
-                        och mycket skitsnack, är vi tillbaka.
-                      </p>
-                      <h4>Nolle-p</h4>
-                      <p>
-                        Varje år börjar nyfikna små nollan på alla
-                        Campus. Självklart finns vi där för att roa och
-                        sprida glädje. Många spelningar blir det då alla
-                        nollan ska få se oss.
-                      </p>
-                      <h4>Dra't i Spa't</h4>
-                      <p>
-                        Efter att vi visat vägen för alla draglag så börjar
-                        vår egen fest med spelning för golf-alumner
-                        och den fantastiska Pizzachat-sittningen.
-                      </p>
-                      <h4>Luciafesten</h4>
-                      <p>
-                        Äntligen är den här! Med livemusik, dans kring
-                        granen, paketbytande, luciatåg och mycket
-                        mer. Visst ses vi där!
-                      </p>
-                      <p>
-                        Wow, LiTHe Blås är ju coolaste gänget! Eller hur?! Kolla in vår sida om du vill veta mer, eller till och med boka oss till ditt evenemang.
-                      </p>
-                      <a href="http://litheblas.org/sv/" class="btn btn-outline-litheblas" role="button">Till LiTHe Blås hemsida</a>
+                      <h4>Amigo</h4>
+                      <p>Utanför Amigo möts du av självaste Sailor Moon! Kom och kika efter Totoros vänner eller varför inte fånga en Pokémon eller två medans du njuter av en kall öl.</p>
+                      <h4>Nano</h4>
+                      <p>I Nano hittar du den rätta baren, precis på gränsen vid den 38e breddgraden. Har du tur kan du få se en enhörning eller få träffa hamburgarens uppfinnare.</p>
+                      <h4>Baljan</h4>
+                      <p>Alltså... Ingen vet mer om barer än vi. Många har ringt oss och sagt tack: "Blåset, ni har gjort oss en väldigt tjänst". Vi har den bästa baren. Bing! Bing! Du vet vad vi menar. Ses i Baljan! (vi har den bästa Baljan).</p>
+                      <h4>Gasquen</h4>
+                      <p>I Gasquen kan du köpa den sedvanliga jultallriken och njuta av fantastisk livekaraoke.</p>
                     </div>
                   </div>
                 </div>
@@ -346,8 +277,7 @@
                   <div class="panel-heading">
                     <div class="panel-title">
                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
-                        <h4 class="box-header">Bilder fr<span class=special-character>å</span>n f<span class=special-character>ö</span>rr</h4>
-                        <p class="text-white">Är du inte helt övertygad än? Ta en titt på galleriet så lovar jag att ni kommer bli frälst.</p>
+                        <h4 class="box-header"><img class="ikon" src="Ikoner\imagesGreen.png">Bilder fr<span class=special-character>å</span>n f<span class=special-character>ö</span>rr</h4>
                         <div class="row text-center">
                           <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                         </div> 
@@ -356,84 +286,43 @@
                   </div>
                   <div id="collapse7" class="panel-collapse collapse">
                     <div class="panel-body">
-                      <h4>Julsittning</h4>
-                      <p class="text-white">Nygammalt för detta år är att det kommer att hållas en fantastisk julsittning i Gasquen. Här   kommer det bjudas på många av julens härligheter och underbar julstämning utlovas.
-                      </p>
-                      <h4>Fin eller finurlig</h4>
-                      <p>Klädkoden är fin eller finurlig. Hur tolkar du det? Ja, vi hoppas få se just dig i de mest perfekta temakläderna eller kanske i den finaste galaklänningen man någonsin skådat.
-                      </p>
-                      <h4>Paket</h4>
-                      <p>Ta gärna med dig ett fyndigt paket till Kårallen. Värdet bör vara 20:-. Väl på plats lämnar du in ditt paket, men glöm inte att ta med ett nytt ut igen när du lämnar festen för denna gång.
-                      </p>
+                      <img class="gallery" src="luciafesten-bilder/trumpet-gyckel.jpg">
+                      <img class="gallery" src="luciafesten-bilder/luciafest-publik.jpg">
+                      <img class="gallery" src="luciafesten-bilder/ksg-cykel.jpg">
+                      <img class="gallery" src="luciafesten-bilder/luciatag.jpg">
+                      <img class="gallery" src="luciafesten-bilder/ksg-korthus.jpg">
+                      <img class="gallery" src="luciafesten-bilder/blaset-sång.jpg">
                     </div>
                   </div>
                 </div>
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <div class="panel-title">
-                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
-                        <h4>Om festen</h4>
-                        <p class="text-white">Hej hej</p>
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                        <h4 class="box-header"><img class="ikon" src="Ikoner\tonesGreen.png">Vilka <span class=special-character>ä</span>r <span class=lithe-blas>LiTHe Blås</span> egentligen<span class=special-character>?</span></h4>
                         <div class="row text-center">
                           <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                         </div> 
                       </a>
                     </div>
                   </div>
-                  <div id="collapse8" class="panel-collapse collapse">
+                  <div id="collapse6" class="panel-collapse collapse">
                     <div class="panel-body">
-                      <h4>Julsittning</h4>
-                      <p class="text-white">Nygammalt för detta år är att det kommer att hållas en fantastisk julsittning i Gasquen. Här   kommer det bjudas på många av julens härligheter och underbar julstämning utlovas.
+                      <p>
+                        Plingandet hörs på långt håll. Först bara svagt, sedan starkare och starkare. Plötsligt blandas ljudet med ett vrål och en hord av gul- och blåklädda personer i konstiga hattar stormar fram. Mycket ös och massa flås - vi är LiTHe Blås!
                       </p>
-                      <h4>Fin eller finurlig</h4>
-                      <p>Klädkoden är fin eller finurlig. Hur tolkar du det? Ja, vi hoppas få se just dig i de mest perfekta temakläderna eller kanske i den finaste galaklänningen man någonsin skådat.
+                      <p>
+                        Det är inte omöjligt att du har sett oss uppträda någon gång. Vi har nämligen huserat på Linköpings universitet sedan 1973 och vårt studentikosa motto troget dyker vi upp när, var och hur som helst för att spela allt från doco till tokjazz. Vi består i dagsläget av ett femtiotal medlemmar från alla fyra fakulteter.
                       </p>
-                      <h4>Paket</h4>
-                      <p>Ta gärna med dig ett fyndigt paket till Kårallen. Värdet bör vara 20:-. Väl på plats lämnar du in ditt paket, men glöm inte att ta med ett nytt ut igen när du lämnar festen för denna gång.
+                      <p>
+                        Det är också vi som ligger bakom det årliga Kårallenevenemanget Luciafesten! Under hösten har fela föreningen jobbat för att alla studenter ska få chansen att avsluta läsåret med en julig och kulig fest utöver det vanliga. 
                       </p>
+                      <p>Hoppas vi ses där!</p>
+                      <p>
+                        Wow, LiTHe Blås är ju coolaste gänget! Eller hur?! Kolla in vår sida om du vill veta mer, eller till och med boka oss till ditt evenemang.
+                      </p>
+                      <a href="http://litheblas.org/sv/" class="btn btn-outline-litheblas" role="button">Till LiTHe Blås hemsida</a>
                     </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
-                        <h4>Om festen</h4>
-                        <p class="text-white">Hej hej</p>
-                        <div class="row text-center">
-                          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                        </div> 
-                      </a>
-                    </div>
-                  </div>
-                  <div id="collapse9" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <h4>Julsittning</h4>
-                      <p class="text-white">Nygammalt för detta år är att det kommer att hållas en fantastisk julsittning i Gasquen. Här   kommer det bjudas på många av julens härligheter och underbar julstämning utlovas.
-                      </p>
-                      <h4>Fin eller finurlig</h4>
-                      <p>Klädkoden är fin eller finurlig. Hur tolkar du det? Ja, vi hoppas få se just dig i de mest perfekta temakläderna eller kanske i den finaste galaklänningen man någonsin skådat.
-                      </p>
-                      <h4>Paket</h4>
-                      <p>Ta gärna med dig ett fyndigt paket till Kårallen. Värdet bör vara 20:-. Väl på plats lämnar du in ditt paket, men glöm inte att ta med ett nytt ut igen när du lämnar festen för denna gång.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
-                        <h4>Schema!</h4>
-                        <p class="text-white">Bla bla bla kul!</p>
-                        <div class="row text-center">
-                          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div id="collapse10" class="panel-collapse collapse">
-                    <div class="panel-body"><p>17:30 Fördrink till Julsittningen</p><p> 20:00 Dörrarna öppnas och Red Shag Vinyl vänder plattor</p><p> 20:45 Lusen Big Band</p><p>23:00 LiTHe Blås</p><p>23:40 Dans kring granen</p><p>00:00 Luciatåg</p><p>00:20 Helmut Jederknüller mit seinem Super Stereo à Gogo Orchester</p>
                   </div>
                 </div>
               </div> 
@@ -449,8 +338,7 @@
       </footer>
 
     </div><!--/.container-->
-
-
+  
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -458,5 +346,35 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="offcanvas.js"></script>
+
+    <script>
+        //Fixar så att bilden på generalerna byter plats beroende på skärmstorlek.
+        $(window).resize(function() {
+          if(window.innerWidth < 430)
+          {
+            $(".generalerna").insertAfter("#generalerNamn");
+            $("h4.box-header").css("font-size", "1.5em");
+          }
+          else
+          {
+            $(".generalerna").insertBefore("#generalerText");   
+            $("h4.box-header").css("font-size", "1.9em");                   
+          }
+        });
+        $(window).load(function() {
+          if(window.innerWidth < 430)
+          {
+            $(".generalerna").insertAfter("#generalerNamn");
+            $("h4.box-header").css("font-size", "1.5em");
+          }
+          else
+          {
+            $(".generalerna").insertBefore("#generalerText");          
+            $("h4.box-header").css("font-size", "1.9em");                   
+          }
+        });
+      
+      </script>
+
   </body>
 </html>

@@ -67,6 +67,11 @@ footer {
   background-color: #ffffff;
 }
 
+.panel-body
+{
+  background-color: #ebf0d7;
+}
+
 .jumbotron-img {
   width: 100%;  
 }
@@ -123,9 +128,7 @@ footer {
   background-color: white;
   border-color: #ffb755;
 }
-.panel-default>.panel-heading {
-  /*background-color: #9d1818;*/
-}
+
 .text-white {
   /*color: white;*/
 }
@@ -142,21 +145,23 @@ footer {
 
 h4.box-header
 {
-  color: black;
-  font-size: 18pt;
+  color: #242c05;
+  font-size: 1.9em;
   font-family: "snirklig";
+  text-align: center;
   /*font-family: 'Lobster', cursive; */
 }
 
 .special-character
 {
   font-family: 'Lobster', cursive;
-  color: black;  
+  color: #242c05;
 }
 
 p
 {
   color: black;
+  font-family: 'MV Boli';  
 }
 
 .text-white
@@ -166,11 +171,25 @@ p
 .generalerna {
   width: 100%;
   max-width: 300px;
+  display: block;
+  margin: auto;
+  float: right;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #879357;
 }
 #demo {
   font: "Times New Roman";
   color: #b7ab9e;
   font-weight: bold;
+}
+
+img.ikon
+{
+  display: block;
+  margin: auto;
+  max-width: 1.7em;
+  overflow: auto;
 }
 
 
@@ -182,9 +201,18 @@ p
 .lithe-blas
 {
   font-family: blaset;
-  color: black;
+  color: #242c05;
 }
+.gallery {
+  width: 100%;
+  padding: 10px;
+}
+.panel-collapse {
 
+}
+#collapse1 {
+  font-style: italic;
+}
 
 
 
