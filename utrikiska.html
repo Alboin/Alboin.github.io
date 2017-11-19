@@ -47,7 +47,7 @@
             <li><a href="countdown.html">Buy Tickets</a></li>
             <li class="active"><a href="utrikiska.html">Information in English</a></li>
             <li><a href="http://litheblas.org/sv/">LiTHe Blås Homepage</a></li>
-            <li class="right"><a href="https://www.facebook.com/litheblas/" class="fa fa-facebook"></a></li>
+            <li class="right"><a href="https://www.facebook.com/events/182769615611567" class="fa fa-facebook"></a></li>
             <li class="right"><a href="https://www.instagram.com/litheblas/" class="fa fa-instagram"></a></li>
 
           </ul>
@@ -293,6 +293,7 @@
                       <img class="gallery" src="luciafesten-bilder/luciatag.jpg">
                       <img class="gallery" src="luciafesten-bilder/ksg-korthus.jpg">
                       <img class="gallery" src="luciafesten-bilder/blaset-sång.jpg">
+                      <img class="gallery" src="luciafesten-bilder/luciafest-publik.jpg">                      
                     </div>
                   </div>
                 </div>
@@ -376,27 +377,63 @@
 
     
     <script>
-      //Fixar så att bilden på generalerna byter plats beroende på skärmstorlek.
-      $(window).resize(function() {
-        if(window.innerWidth < 430)
-        {
-          $(".generalerna").insertAfter("#generalerNamn");
-        }
-        else
-        {
-          $(".generalerna").insertBefore("#generalerText");          
-        }
-      });
-      $(window).load(function() {
-        if(window.innerWidth < 430)
-        {
-          $(".generalerna").insertAfter("#generalerNamn");
-        }
-        else
-        {
-          $(".generalerna").insertBefore("#generalerText");          
-        }
-      });
+      function insertImgSmall()
+      {
+        $("#gallery-div").html('').append('<img class="gallery" src="luciafesten-bilder/trumpet-gyckel.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/sittning.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/julgran.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/ksg-cykel.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/luciatag.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/ksg-korthus.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/blaset-sång.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/luciafest-publik.jpg">');
+
+        $(".gallery").css("max-width", "500px");        
+      }
+
+      function insertImgLarge()
+      {
+        $("#gallery-div").html('').append('<img class="gallery" src="luciafesten-bilder/trumpet-gyckel.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/sittning.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/ksg-cykel.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/julgran.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/luciatag.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/ksg-korthus.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/blaset-sång.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/luciafest-publik.jpg">');
+
+        $(".gallery").css("max-width", $(".panel-default").innerWidth()/2.1 - 20 + "px");
+      }
+
+        //Fixar så att bilden på generalerna byter plats beroende på skärmstorlek.
+        $(window).resize(function() {
+          if(window.innerWidth < 430)
+          {
+            $(".generalerna").insertAfter("#generalerNamn").css("margin", "auto");
+            $("h4.box-header").css("font-size", "1.5em");
+            insertImgSmall();
+          }
+          else
+          {
+            $(".generalerna").insertBefore("#generalerText").css("margin", "10px");   
+            $("h4.box-header").css("font-size", "1.9em");        
+            insertImgLarge();           
+          }
+        });
+        $(window).load(function() {
+          if(window.innerWidth < 430)
+          {
+            $(".generalerna").insertAfter("#generalerNamn").css("margin", "auto");
+            $("h4.box-header").css("font-size", "1.5em");
+            insertImgSmall();
+          }
+          else
+          {
+            $(".generalerna").insertBefore("#generalerText").css("margin", "10px");          
+            $("h4.box-header").css("font-size", "1.9em");
+            insertImgLarge();                   
+          }
+        });
     
     </script>
   </body>
