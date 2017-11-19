@@ -11,7 +11,7 @@
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     
-    <title>Off Canvas Template for Bootstrap</title>
+    <title>Luciafesten</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +77,14 @@
           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
           // Output the result in an element with id="demo"
-          document.getElementById("demo").innerHTML = days + " dagar " + hours + " timmar " + minutes + " m " + seconds + " s ";
+          if(window.innerWidth < 600)
+          {
+            document.getElementById("demo").innerHTML = days + " dagar<br>" + hours + " timmar<br>" + minutes + " m " + seconds + " s ";
+          }
+          else
+          {
+            document.getElementById("demo").innerHTML = days + " dagar " + hours + " timmar<br>" + minutes + " m " + seconds + " s ";            
+          }
       
           // If the count down is over, write some text 
           if (distance < 0) {
@@ -87,7 +94,37 @@
         }, 1000);
         </script>
       </div>
-    
+      <div class="row">
+        <div class="pic"> 
+          <img class="ikoner" src="ikoner/dansLightgreen.png">
+        </div>
+        <div class="pic"> 
+          <img class="ikoner" src="ikoner/drinkLightgreen.png">
+        </div>
+        <div class="pic"> 
+          <img class="ikoner" src="ikoner/granLightgreen.png">
+        </div>
+        <div class="pic"> 
+          <img class="ikoner" src="ikoner/karaokeLightgreen.png">
+        </div>
+        <div class="pic"> 
+          <img class="ikoner" src="ikoner/matLightgreen.png">
+        </div>
+        <div class="pic"> 
+          <img class="ikoner" src="ikoner/ljuskronaLightgreen.png">
+        </div>
+
+        <!--
+        <ul>
+          <li><img class="ikoner" src="ikoner/dans.png"> </li>
+          <li><img class="ikoner" src="ikoner/drink.png"></li>
+          <li><img class="ikoner" src="ikoner/julgran.png"></li>
+          <li><img class="ikoner" src="ikoner/karaoke.png"></li>
+          <li><img class="ikoner" src="ikoner/mat.png"></li>
+          <li><img class="ikoner" src="ikoner/ljuskrona.png"></li>
+        </ul>
+           -->
+      </div>
     </div><!--/.container-->
 
 
@@ -98,5 +135,31 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="offcanvas.js"></script>
+
+    <script>
+        
+                $(window).resize(function() {
+                  if(window.innerWidth < 430)
+                  {
+                    $("body").css("padding-top", "10%");
+                  }
+                  else
+                  {
+                    $("body").css("padding-top", "5%");                    
+                  }
+                });
+                $(window).load(function() {
+                  if(window.innerWidth < 430)
+                  {
+                    $("body").css("padding-top", "10%");                    
+                  }
+                  else
+                  {
+                    $("body").css("padding-top", "5%");                    
+                  }
+                });
+              
+              </script>
+
   </body>
 </html>

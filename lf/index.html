@@ -47,6 +47,8 @@
             <li><a href="countdown.html">Köp biljett</a></li>
             <li><a href="utrikiska.html">Information in English</a></li>
             <li><a href="http://litheblas.org/sv/">LiTHe Blås hemsida</a></li>
+            <li class="right"><a href="https://www.facebook.com/litheblas/" class="fa fa-facebook"></a></li>
+            <li class="right"><a href="https://www.instagram.com/litheblas/" class="fa fa-instagram"></a></li>
           </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
@@ -66,7 +68,7 @@
           </div>
           <div class="container">
             <div class="clock">
-              <p id="demo">Tagga Luciafesten  !</p>
+              <p id="demo-home">Tagga Luciafesten  !</p>
 
               <script>
               // Set the date we're counting down to
@@ -88,13 +90,21 @@
               var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
               // Output the result in an element with id="demo"
-              document.getElementById("demo").innerHTML = days + " dagar " + hours + " timmar "
+              if(window.innerWidth < 400)
+              {
+                document.getElementById("demo-home").innerHTML = days + " dagar " + hours + " timmar <br>"
               + minutes + " m " + seconds + " s ";
+              }
+              else
+              {
+                document.getElementById("demo-home").innerHTML = days + " dagar " + hours + " timmar "
+              + minutes + " m " + seconds + " s ";
+              }
       
               // If the count down is over, write some text 
               if (distance < 0) {
               clearInterval(x);
-              document.getElementById("demo").innerHTML = "NU!!";
+              document.getElementById("demo-home").innerHTML = "NU!!";
               }
               }, 1000);
               </script>
@@ -151,22 +161,26 @@
                   </div>
                   <div id="collapse2" class="panel-collapse collapse">
                     <div class="panel-body">
-                      <h4>Fin eller finurlig</h4>
+                      <h4><strong>Fin eller finurlig</strong></h4>
                       <p>Med klädkoden fin eller finurlig ber vi dig att lämna ovven hemma och istället ta fram din gamla julgransdräkt som ligger längst bak i garderoben. Men misströsta inte om den verkar vara försvunnen, för det fungerar lika bra med långklänning eller en av dina alla julkostymer. Det viktiga är att du känner dig fin… eller finurlig!
                       </p>
-                      <h4>Paketbyte</h4>
+                      <h4><strong>Paketbyte</strong></h4>
                       <p>Ta gärna med dig ett fyndigt paket till Kårallen. Värdet bör vara 20:-. Väl på plats lämnar du in ditt paket, men glöm inte att ta med ett nytt ut igen när du lämnar festen för denna gång.
                       </p>
-                      <h4>KSG - Kul Små Grejer™</h4>
+                      <h4><strong>KSG - Kul Små Grejer™</strong></h4>
                       <p>
                         Under festens gång kommer du garanterat springa på en del KSG, Kul Små Grejer™, i Kårallen. Då gäller det att stanna upp, fokusera och vara beredd med både intelligenta strategier och ren råstyrka för här väntar en utmaning. Ta dina kompisar till hjälp och se vem som klarar sig bäst när ni tillsammans utforskar Kårallen.
                       </p>
-                      <h4>Harakiri - Musikalist självmord</h4>
+                      <h4><strong>Harakiri - Musikalist självmord</strong></h4>
                       <p>
                         I Gasquen utlovas det karaoke till LiTHe Blås eget liveband, Harakiri! Med ett stort utbud av låtar så finns det något för alla att sjunga med i. Tveka inte att ta plats på scen, oavsett hur dina senaste sånginsatser i duschen har varit, att sjunga vackert är ändå inte själva tanken!
                       </p>
-                      <h4>Julsittning</h4>
-                      <p>Innan Kårallens dörrar öppnas upp för Luciafest hålls en magisk julsittning. Här bjuds det på många av julens härligheter och underbar julstämning utlovas.
+                      <h4><strong>Julsittning</strong></h4>
+                      <p>Innan Kårallens dörrar öppnas upp för Luciafest hålls en magisk julsittning. Här bjuds det på många av julens härligheter och underbar julstämning utlovas.</p>
+                      <h4><strong>Smått och gott</strong></h4>
+                      <p>
+                        Självklart slutar inte det roliga där. Luciafesten har mycket mer att bjuda på, såsom ett spektakulärt luciatåg, virvlande dans runt julgranen och mycket mycket mer. Kom så får du se!
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -183,28 +197,28 @@
                   </div>
                   <div id="collapse3" class="panel-collapse collapse">
                     <div class="panel-body">
-                      <p>17:30</p>
-                      <p> Sittningsgäster välkomnas med fördrink</p>
-                      <p>20:00 </p>
-                      <p>Kårrallens dörrar öppnas upp för övriga gäster</p>
-                      <p>21:00</p> 
-                      <p>Lusen Big Band entrar Baljan</p>
-                      <p>21:30</p> 
-                      <p>Harakiri drar igång i Gasquen</p>
-                      <p>22:15</p> 
-                      <p>LiU-bandet tar över scenen i Baljan</p>
-                      <p>23:30</p> 
-                      <p>LiTHe Blås stormar Baljan</p>
-                      <p>00:00</p> 
-                      <p>Dans runt gran och Luciatåg i Baljan</p>
-                      <p>00:30</p> 
-                      <p>Helmut Jederknüller mit seinem Super Stereo à Gogo Orchester river igång i Gasquen</p>
-                      <p>01:15</p> 
-                      <p>D-bandet rockar loss i Baljan</p>
-                      <p>01:30</p> 
-                      <p>Harakiri drar åter igång i Gasquen</p>
-                      <p>03:00</p> 
-                      <p>Luciafesten är över för i år och nedräkningen börjar till Luciafesten 2018</p>
+                      <p><b>17:30</b><br>
+                      Sittningsgäster välkomnas med fördrink</p>
+                      <p><b>20:00 </b><br>
+                      Kårrallens dörrar öppnas upp för övriga gäster</p>
+                      <p><b>21:00</b><br> 
+                      <b>Lusen Big Band</b> entrar Baljan</p>
+                      <p><b>21:30</b><br> 
+                      Harakiri drar igång i Gasquen</p>
+                      <p><b>22:15</b><br> 
+                      <b>LiU-bandet</b> tar över scenen i Baljan</p>
+                      <p><b>23:30</b><br> 
+                      <b>LiTHe Blås</b> stormar Baljan</p>
+                      <p><b>00:00</b><br> 
+                      Dans runt gran och Luciatåg i Baljan</p>
+                      <p><b>00:30</b><br> 
+                      <b>Helmut Jederknüller mit seinem Super Stereo à Gogo Orchester</b> river igång i Gasquen</p>
+                      <p><b>01:15</b><br> 
+                      <b>D-bandet</b> rockar loss i Baljan</p>
+                      <p><b>01:30</b><br> 
+                      Harakiri drar åter igång i Gasquen</p>
+                      <p><b>03:00</b><br> 
+                      Luciafesten är över för i år och nedräkningen börjar till Luciafesten 2018</p>
                     </div>
                   </div>
                 </div>
@@ -222,28 +236,26 @@
                   <div id="collapse4" class="panel-collapse collapse">
                     <div class="panel-body">
                       <h4>
-                        Biljettsläpp Måndag 4 December
+                        <strong>Biljettsläpp Måndag 4 December</strong>
                       </h4>
                       <p>
-                        Biljettsläppet för årets juligaste fest sker online, wow! <a href="countdown.html">Webshopen</a> öppnas upp i samband med att LiTHe Blås river av en riktig dunderspelning i Colloseum. Spelningen kommer äga rum någon gång mellan 12 och 13. Kom dit och titta på så får du veta exakt när biljetterna släpps, annars gäller det att vara beredd här på hemsidan!
+                        Biljettsläppet för årets juligaste fest sker online, wow! <a href="countdown.html">Webshopen</a> öppnas upp i samband med att LiTHe Blås river av en riktig dunderspelning i Colosseum. Spelningen kommer äga rum någon gång mellan 12 och 13. Kom dit och titta på så får du veta exakt när biljetterna släpps, annars gäller det att vara beredd här på hemsidan!
                       </p>
                       <h4>
-                        Priser
+                        <strong>Priser</strong>
                       </h4>
                       <p>
-                        Festkvällen kommer äga rum lördagen den 9/12 på Kårallen och
-                        starta med en fantastisk julsittning med fördrink 17:30. För övriga
-                        öppnas Kårallen upp 20:00.
+                        <strong>Julsittning + festbiljett</strong>
                       </p>
+                      <p>345Kr (335Kr för kårmedlemmar)</p>
                       <p>
-                        Julsittning + festbiljett: 345Kr (335Kr för kårmedlemmar)
+                        <strong>Julsittning (alkoholfritt) + festbiljett</strong>
                       </p>
-                      <P>
-                        Julsittning (alkoholfritt) + festbiljett: 305Kr (295Kr för kårmedlemmar)
-                      </P>
-                      <P>
-                        Festbiljett: 125Kr (115Kr för kårmedlemmar)
+                      <p>305Kr (295Kr för kårmedlemmar)</p>
+                      <p>
+                        <strong>Festbiljett</strong>
                       </p>
+                      <p>125Kr (115Kr för kårmedlemmar)</p>
                       <a href="countdown.html" class="btn btn-outline-biljett" role="button">Köp biljett!</a>
                       <!--<button type="button" class="btn btn-outline-biljett">Köp biljett!</button>-->
                     </div>
@@ -262,13 +274,13 @@
                   </div>
                   <div id="collapse5" class="panel-collapse collapse">
                     <div class="panel-body">
-                      <h4>Amigo</h4>
+                      <h4><strong>Amigo</strong></h4>
                       <p>Utanför Amigo möts du av självaste Sailor Moon! Kom och kika efter Totoros vänner eller varför inte fånga en Pokémon eller två medans du njuter av en kall öl.</p>
-                      <h4>Nano</h4>
+                      <h4><strong>Nano</strong></h4>
                       <p>I Nano hittar du den rätta baren, precis på gränsen vid den 38e breddgraden. Har du tur kan du få se en enhörning eller få träffa hamburgarens uppfinnare.</p>
-                      <h4>Baljan</h4>
+                      <h4><strong>Baljan</strong></h4>
                       <p>Alltså... Ingen vet mer om barer än vi. Många har ringt oss och sagt tack: "Blåset, ni har gjort oss en väldigt tjänst". Vi har den bästa baren. Bing! Bing! Du vet vad vi menar. Ses i Baljan! (vi har den bästa Baljan).</p>
-                      <h4>Gasquen</h4>
+                      <h4><strong>Gasquen</strong></h4>
                       <p>I Gasquen kan du köpa den sedvanliga jultallriken och njuta av fantastisk livekaraoke.</p>
                     </div>
                   </div>
@@ -285,13 +297,15 @@
                     </div>
                   </div>
                   <div id="collapse7" class="panel-collapse collapse">
-                    <div class="panel-body">
+                    <div class="panel-body" id="gallery-div">
                       <img class="gallery" src="luciafesten-bilder/trumpet-gyckel.jpg">
-                      <img class="gallery" src="luciafesten-bilder/luciafest-publik.jpg">
+                      <img class="gallery" src="luciafesten-bilder/sittning.jpg">
+                      <img class="gallery" src="luciafesten-bilder/julgran.jpg">
                       <img class="gallery" src="luciafesten-bilder/ksg-cykel.jpg">
                       <img class="gallery" src="luciafesten-bilder/luciatag.jpg">
                       <img class="gallery" src="luciafesten-bilder/ksg-korthus.jpg">
                       <img class="gallery" src="luciafesten-bilder/blaset-sång.jpg">
+                      <img class="gallery" src="luciafesten-bilder/luciafest-publik.jpg">
                     </div>
                   </div>
                 </div>
@@ -312,15 +326,14 @@
                         Plingandet hörs på långt håll. Först bara svagt, sedan starkare och starkare. Plötsligt blandas ljudet med ett vrål och en hord av gul- och blåklädda personer i konstiga hattar stormar fram. Mycket ös och massa flås - vi är LiTHe Blås!
                       </p>
                       <p>
-                        Det är inte omöjligt att du har sett oss uppträda någon gång. Vi har nämligen huserat på Linköpings universitet sedan 1973 och vårt studentikosa motto troget dyker vi upp när, var och hur som helst för att spela allt från doco till tokjazz. Vi består i dagsläget av ett femtiotal medlemmar från alla fyra fakulteter.
+                        Det är inte omöjligt att du har sett oss uppträda någon gång. Vi har nämligen huserat på Linköpings universitet sedan 1973 och vårt studentikosa motto troget dyker vi upp när, var och hur som helst för att spela allt från disco till tokjazz. Vi består i dagsläget av ett femtiotal medlemmar från alla fyra fakulteter.
                       </p>
                       <p>
                         Det är också vi som ligger bakom det årliga Kårallenevenemanget Luciafesten! Under hösten har fela föreningen jobbat för att alla studenter ska få chansen att avsluta läsåret med en julig och kulig fest utöver det vanliga. 
                       </p>
                       <p>Hoppas vi ses där!</p>
                       <p>
-                        Wow, LiTHe Blås är ju coolaste gänget! Eller hur?! Kolla in vår sida om du vill veta mer, eller till och med boka oss till ditt evenemang.
-                      </p>
+                        Kolla in vår sida om du vill veta mer. Kanske vill du boka en spelning, eller rentav bli en i gänget? 
                       <a href="http://litheblas.org/sv/" class="btn btn-outline-litheblas" role="button">Till LiTHe Blås hemsida</a>
                     </div>
                   </div>
@@ -332,9 +345,14 @@
       </div><!--/row-->
 
       <!--<hr>-->
+            <!--<hr>-->
+      <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<!-- Add font awesome icons -->
+      
       <footer>
-        <p>&copy; LiThe Blås 2017</p>
+        <p class="logo">&copy; LiThe Blås 2017</p>
       </footer>
 
     </div><!--/.container-->
@@ -348,29 +366,62 @@
     <script src="offcanvas.js"></script>
 
     <script>
+
+      function insertImgSmall()
+      {
+        $("#gallery-div").html('').append('<img class="gallery" src="luciafesten-bilder/trumpet-gyckel.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/sittning.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/julgran.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/ksg-cykel.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/luciatag.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/ksg-korthus.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/blaset-sång.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/luciafest-publik.jpg">');
+
+        $(".gallery").css("max-width", "500px");        
+      }
+
+      function insertImgLarge()
+      {
+        $("#gallery-div").html('').append('<img class="gallery" src="luciafesten-bilder/trumpet-gyckel.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/sittning.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/ksg-cykel.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/julgran.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/luciatag.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/ksg-korthus.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/blaset-sång.jpg">')
+        .append('<img class="gallery" src="luciafesten-bilder/luciafest-publik.jpg">');
+
+        $(".gallery").css("max-width", $(".panel-default").innerWidth()/2.1 - 20 + "px");
+      }
+
         //Fixar så att bilden på generalerna byter plats beroende på skärmstorlek.
         $(window).resize(function() {
           if(window.innerWidth < 430)
           {
-            $(".generalerna").insertAfter("#generalerNamn");
+            $(".generalerna").insertAfter("#generalerNamn").css("margin", "auto");
             $("h4.box-header").css("font-size", "1.5em");
+            insertImgSmall();
           }
           else
           {
-            $(".generalerna").insertBefore("#generalerText");   
-            $("h4.box-header").css("font-size", "1.9em");                   
+            $(".generalerna").insertBefore("#generalerText").css("margin", "10px");   
+            $("h4.box-header").css("font-size", "1.9em");        
+            insertImgLarge();           
           }
         });
         $(window).load(function() {
           if(window.innerWidth < 430)
           {
-            $(".generalerna").insertAfter("#generalerNamn");
+            $(".generalerna").insertAfter("#generalerNamn").css("margin", "auto");
             $("h4.box-header").css("font-size", "1.5em");
+            insertImgSmall();
           }
           else
           {
-            $(".generalerna").insertBefore("#generalerText");          
-            $("h4.box-header").css("font-size", "1.9em");                   
+            $(".generalerna").insertBefore("#generalerText").css("margin", "10px");          
+            $("h4.box-header").css("font-size", "1.9em");
+            insertImgLarge();                   
           }
         });
       

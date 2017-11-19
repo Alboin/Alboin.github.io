@@ -161,7 +161,8 @@ h4.box-header
 p
 {
   color: black;
-  font-family: 'MVBoli';  
+  /*font-family: 'MVBoli'; */
+  font-size: 1.1em; 
 }
 
 .text-white
@@ -172,16 +173,17 @@ p
   width: 100%;
   max-width: 300px;
   display: block;
-  margin: auto;
+  margin: 10px;
   float: right;
   border-style: solid;
   border-width: 2px;
   border-color: #879357;
 }
-#demo {
+#demo-home {
   font: "Times New Roman";
   color: #b7ab9e;
   font-weight: bold;
+  font-size: 0.9em;
 }
 
 img.ikon
@@ -197,11 +199,11 @@ img.ikon
   font-family: blaset;
   src: url("Old English Five.ttf");
 }
-
+/*
 @font-face {
   font-family: MVBoli;
   src: url("mvboli.ttf");
-}
+}*/
 
 
 .lithe-blas
@@ -211,6 +213,8 @@ img.ikon
 }
 .gallery {
   width: 100%;
+  max-width: 500px;
+  float: none;
   padding: 10px;
 }
 .panel-collapse {
@@ -219,7 +223,37 @@ img.ikon
 #collapse1 {
   font-style: italic;
 }
+.logo {
+  color: #879357;
+}
 
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: transparent;
+    color: white;
+}
+
+.fa-instagram {
+  background: transparent;
+  color: white;
+}
 
 
 

@@ -1,6 +1,6 @@
 html, 
 body {
-  padding-top: 50px;
+  padding-top: 10%;
   background-image: url("woodBackground.jpg");
   background-size: contain;  
   background-repeat:   repeat;
@@ -8,18 +8,27 @@ body {
 .text {
 	text-align: center;
 	font-size: 3em;
+  font-family: MVBoli;
+  text-shadow: 0 0 2px #000;
+  color: #879357;
+  
 }
 .text-small {
   text-align: center;
   font-size: 2em;
+  font-family: MVBoli;
+  text-shadow: 0 0 2px #000;
+  color: #879357;
+
 }
 .container {
 	color: white;
 }
 .clock {
 	text-align: center;
-	font-size: 6em;
-	padding-bottom: 40px;
+  font-size: 3.6em;
+  text-shadow: 0 0 2px #000;
+  
 }
 .navbar-inverse .navbar-brand {
   color: black;
@@ -32,3 +41,39 @@ body {
 .navbar-inverse {
   /*background-color: #fff5a4;*/
   background-color: #ad3134;
+}
+@font-face {
+  font-family: MVBoli;
+  src: url("mvboli.ttf");
+}
+/*
+ul {
+  white-space: nowrap;
+
+}
+ul, li {
+  list-style: none;
+  display: table-cell;
+}
+
+.ikoner {
+  box-sizing: border-box;
+  max-width: calc(100% / 6)
+}
+*/
+.row {
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+}
+.pic {
+  display: table-cell;
+  vertical-align: top;
+}
+.pic img {
+  display: block;
+  width: 10%;
+  position: absolute;
+  margin-bottom: 5%;
+  
+}
