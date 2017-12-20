@@ -1,441 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html >
+<head>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110199426-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-110199426-1');
-    </script>
-    
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="BlottarTuban.ico">
+<!--
+<meta property="fb:admins" content="YOUR-FACEBOOK-ID" />
+<meta property="og:title" content="HyperArts SEO Services" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://www.hyperarts.com/_img-fb/Image-SRC_HyperArts.png" />
+<meta property="og:image" content="http://www.hyperarts.com/_img-fb/Image-SRC_HyperArts_blue.png" />
+<meta property="og:url" content="http://www.hyperarts.com/seo-services/search-engine-optimization-services-san-francisco.html" />
+<meta property="og:site_name" content="HyperArts Web Design & Social Media" />-->
 
-    <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    
-    <title>Luciafesten</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="offcanvas.css" rel="stylesheet">
+	<title>Albin's projects</title>
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
+	<meta name="keywords" content="3D visualization, student, data-visualization, open data, wikipedia, fluid simulation, unemployment, navier-stokes, SPH
+		smoothed-particle hydrodynamics, hackatrhon, hack for sweden, albin bergström, ballpit, university, media technology, medieteknik, bollhav, arbetslöshet">
+	<meta name="author" content="Albin Bergström">
+	<meta property="og:description" content="This is a page with some of the web-projects that I've participated in during my studies at Linköping University.">
+	<link rel="image_src" href="http://alboin.github.io/img/albin.png">
 
-  <body>
-    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Luciafesten</a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Hem</a></li>
-            <li><a href="https://www.bitket.se/luciafesten/">Köp biljett</a></li>
-            <li><a href="utrikiska.html">Information in English</a></li>
-            <li><a href="http://litheblas.org/sv/">LiTHe Blås hemsida</a></li>
-            <li class="right"><a href="https://www.facebook.com/events/182769615611567" class="fa fa-facebook"></a></li>
-            <li class="right"><a href="https://www.instagram.com/litheblas/" class="fa fa-instagram"></a></li>
-          </ul>
-        </div><!-- /.nav-collapse -->
-      </div><!-- /.container -->
-    </div><!-- /.navbar -->
+	<meta property="og:image" content="http://alboin.github.io/img/albin.png" >
 
-    <div class="container">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="src/flip.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 
-      <div class="row">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        <div class="col-xs-12">
-          <p class="pull-right visible-xs">
-          </p>
-          <div class="jumbotron">
-            <img class="jumbotron-img" src="EventBannerTrans.png">
-            <!--<h1>Luciafesten!</h1>
-            <p>Hallå!</p>-->
-          </div>
-          <div class="container">
-            <div class="clock">
-              <p id="demo-home">Tagga Luciafesten  !</p>
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-              <script>
-              // Set the date we're counting down to
-              var countDownDate = new Date("Dec 9, 2017 20:00:00").getTime();
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-              // Update the count down every 1 second
-              var x = setInterval(function() {
+	<!-- Fontawesome -->
+	<script src="https://use.fontawesome.com/7b81d9e7e5.js"></script>
 
-              // Get todays date and time
-              var now = new Date().getTime();
-    
-              // Find the distance between now an the count down date
-              var distance = countDownDate - now;
-    
-              // Time calculations for days, hours, minutes and seconds
-              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-              // Output the result in an element with id="demo"
-              if(window.innerWidth < 400)
-              {
-                document.getElementById("demo-home").innerHTML = days + " dagar " + hours + " timmar <br>"
-              + minutes + " m " + seconds + " s ";
-              }
-              else
-              {
-                document.getElementById("demo-home").innerHTML = days + " dagar " + hours + " timmar "
-              + minutes + " m " + seconds + " s ";
-              }
-      
-              // If the count down is over, write some text 
-              if (distance < 0) {
-              clearInterval(x);
-              document.getElementById("demo-home").innerHTML = "NU!!";
-              }
-              }, 1000);
-              </script>
-            </div>
-            
-                <div class="panel-group" id="accordion">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <div class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                            
-                        
-                        <h4 class="box-header"><img class="ikon" src="Ikoner\granGreen.png">Luciageneralerna har ordet </h4>
-                          
-                          <div class="row text-center">
-                            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                          </div> 
-                          
-                        </a>
-                      </div>
-                    </div>
-                  <div id="collapse1" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <img class="generalerna" src="Generalerna, hoppbild.jpg">
-                      <p id="generalerText">
-                        Varmt välkomna till Luciafesten, i vår mening årets mysigaste fest. Den nionde december svidas
-                        Kårallen om till julstass, komplett med dekor på alla våningsplan och en fyra meter hög julgran i Baljan. Runt om i huset kommer ett antal Kul Små Grejer™ finnas utplacerade. Exempelvis Tuba Hero, ett Guitar Hero spel du styr med en tuba, och vårt mystiska fotobås.
-                      </p>
-                      <p>
-                        Kvällen inleds med en julsittning i Gasquen innan själva festen öppnar vid åtta. Kvällen kommer att vara fylld av musik och vi presenterar stolt inte mindre än fem live-akter: Lusen Big Band, LiU-bandet, LiTHe Blås, Helmut Jederknüller mit seinem Super Stereo à Gogo Orchester samt D-bandet. Som om inte det vore nog kan man dessutom som festbesökare själv bidra till musiken tillsammans med vårt Harakiri-band, karaoke ackompanjerat av vårt skickliga liveband.
-                      </p>
-                      <p>
-                       Andra stämningshöjande inslag är temabarer, luciatåg, dans runt granen och julklappsbyte. För att hinna uppleva allt som händer rekommenderar vi stark att ni kommer tidigt till festen för att inte missa något. Så lämna ovven hemma, ta på dig din finaste julutstyrsel (kom i klänning/kavaj eller varför inte som snöflinga, julgranskula eller luciakrona) och kom till Kårallen den 9/12 för en fest du sent kommer att glömma.
-                      </p>
-                      <p>
-                        Luciageneralerna
-                      </p>
-                      <p id="generalerNamn">
-                        Gustav, Tova och Sofia
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                        <h4 class="box-header"><img class="ikon" src="Ikoner\dansGreen.png">Om festen</h4>
-                        <div class="row text-center">
-                          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                        </div> 
-                      </a>
-                    </div>
-                  </div>
-                  <div id="collapse2" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <h4><strong>Fin eller finurlig</strong></h4>
-                      <p>Med klädkoden fin eller finurlig ber vi dig att lämna ovven hemma och istället ta fram din gamla julgransdräkt som ligger längst bak i garderoben. Men misströsta inte om den verkar vara försvunnen, för det fungerar lika bra med långklänning eller en av dina alla julkostymer. Det viktiga är att du känner dig fin… eller finurlig!
-                      </p>
-                      <h4><strong>Paketbyte</strong></h4>
-                      <p>Ta gärna med dig ett fyndigt paket till Kårallen. Värdet bör vara 20:-. Väl på plats lämnar du in ditt paket, men glöm inte att ta med ett nytt ut igen när du lämnar festen för denna gång.
-                      </p>
-                      <h4><strong>KSG - Kul Små Grejer™</strong></h4>
-                      <p>
-                        Under festens gång kommer du garanterat springa på en del KSG, Kul Små Grejer™, i Kårallen. Då gäller det att stanna upp, fokusera och vara beredd med både intelligenta strategier och ren råstyrka för här väntar en utmaning. Ta dina kompisar till hjälp och se vem som klarar sig bäst när ni tillsammans utforskar Kårallen.
-                      </p>
-                      <h4><strong>Harakiri - Musikalist självmord</strong></h4>
-                      <p>
-                        I Gasquen utlovas det karaoke till LiTHe Blås eget liveband, Harakiri! Med ett stort utbud av låtar så finns det något för alla att sjunga med i. Tveka inte att ta plats på scen, oavsett hur dina senaste sånginsatser i duschen har varit, att sjunga vackert är ändå inte själva tanken!
-                      </p>
-                      <h4><strong>Julsittning</strong></h4>
-                      <p>Innan Kårallens dörrar öppnas upp för Luciafest hålls en magisk julsittning. Här bjuds det på många av julens härligheter och underbar julstämning utlovas.</p>
-                      <h4><strong>Smått och gott</strong></h4>
-                      <p>
-                        Självklart slutar inte det roliga där. Luciafesten har mycket mer att bjuda på, såsom ett spektakulärt luciatåg, virvlande dans runt julgranen och mycket mycket mer. Kom så får du se!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                        <h4 class="box-header"><img class="ikon" src="Ikoner\clockGreen.png">Schema</h4>
-                        <div class="row text-center">
-                          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                        </div> 
-                      </a>
-                    </div>
-                  </div>
-                  <div id="collapse3" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <p><b>17:30</b><br>
-                      Sittningsgäster välkomnas med fördrink</p>
-                      <p><b>20:00 </b><br>
-                      Kårrallens dörrar öppnas upp för övriga gäster</p>
-                      <p><b>21:00</b><br> 
-                      <b>Lusen Big Band</b> entrar Baljan</p>
-                      <p><b>21:30</b><br> 
-                      Harakiri drar igång i Gasquen</p>
-                      <p><b>22:15</b><br> 
-                      <b>LiU-bandet</b> tar över scenen i Baljan</p>
-                      <p><b>23:30</b><br> 
-                      <b>LiTHe Blås</b> stormar Baljan</p>
-                      <p><b>00:00</b><br> 
-                      Dans runt gran och Luciatåg i Baljan</p>
-                      <p><b>00:30</b><br> 
-                      <b>Helmut Jederknüller mit seinem Super Stereo à Gogo Orchester</b> river igång i Gasquen</p>
-                      <p><b>01:15</b><br> 
-                      <b>D-bandet</b> rockar loss i Baljan</p>
-                      <p><b>01:30</b><br> 
-                      Harakiri drar åter igång i Gasquen</p>
-                      <p><b>03:00</b><br> 
-                      Luciafesten är över för i år och nedräkningen börjar till Luciafesten 2018</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                        <h4 class="box-header"><img class="ikon" src="Ikoner\ticketsGreen.png">Biljetter</h4>
-                        <div class="row text-center">
-                          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                        </div> 
-                      </a>
-                    </div>
-                  </div>
-                  <div id="collapse4" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <h4>
-                        <strong>Biljettsläpp Måndag 4 December</strong>
-                      </h4>
-                      <p>
-                        Biljettsläppet för årets juligaste fest sker online, wow! <a href="https://www.bitket.se/luciafesten/">Webshopen</a> öppnas upp i samband med att LiTHe Blås river av en riktig dunderspelning i Colosseum. Spelningen kommer äga rum någon gång mellan 12 och 13. Kom dit och titta på så får du veta exakt när biljetterna släpps, annars gäller det att vara beredd här på hemsidan!
-                      </p>
-                      <h4>
-                        <strong>Priser</strong>
-                      </h4>
-                      <p>
-                        <strong>Julsittning + festbiljett</strong>
-                      </p>
-                      <p>345Kr (335Kr för kårmedlemmar)</p>
-                      <p>
-                        <strong>Julsittning (alkoholfritt) + festbiljett</strong>
-                      </p>
-                      <p>305Kr (295Kr för kårmedlemmar)</p>
-                      <p>
-                        <strong>Festbiljett</strong>
-                      </p>
-                      <p>125Kr (115Kr för kårmedlemmar)</p>
-                      <a href="https://www.bitket.se/luciafesten/" class="btn btn-outline-biljett" role="button">Köp biljett!</a>
-                      <!--<button type="button" class="btn btn-outline-biljett">Köp biljett!</button>-->
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-                        <h4 class="box-header"><img class="ikon" src="Ikoner\drinkGreen.png">Temabarer</h4>
-                        <div class="row text-center">
-                          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                        </div> 
-                      </a>
-                    </div>
-                  </div>
-                  <div id="collapse5" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <h4><strong>Amigo</strong></h4>
-                      <p>Utanför Amigo möts du av självaste Sailor Moon! Kom och kika efter Totoros vänner eller varför inte fånga en Pokémon eller två medans du njuter av en kall öl.</p>
-                      <h4><strong>Nano</strong></h4>
-                      <p>I Nano hittar du den rätta baren, precis på gränsen vid den 38e breddgraden. Har du tur kan du få se en enhörning eller få träffa hamburgarens uppfinnare.</p>
-                      <h4><strong>Baljan</strong></h4>
-                      <p>Alltså... Ingen vet mer om barer än vi. Många har ringt oss och sagt tack: "Blåset, ni har gjort oss en väldigt tjänst". Vi har den bästa baren. Bing! Bing! Du vet vad vi menar. Ses i Baljan! (vi har den bästa Baljan).</p>
-                      <h4><strong>Gasquen</strong></h4>
-                      <p>I Gasquen kan du köpa den sedvanliga jultallriken och njuta av fantastisk livekaraoke.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
-                        <h4 class="box-header"><img class="ikon" src="Ikoner\imagesGreen.png">Bilder fr<span class=special-character>å</span>n f<span class=special-character>ö</span>rr</h4>
-                        <div class="row text-center">
-                          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                        </div> 
-                      </a>
-                    </div>
-                  </div>
-                  <div id="collapse7" class="panel-collapse collapse">
-                    <div class="panel-body" id="gallery-div">
-                      <img class="gallery" src="luciafesten-bilder/trumpet-gyckel.jpg">
-                      <img class="gallery" src="luciafesten-bilder/sittning.jpg">
-                      <img class="gallery" src="luciafesten-bilder/julgran.jpg">
-                      <img class="gallery" src="luciafesten-bilder/ksg-cykel.jpg">
-                      <img class="gallery" src="luciafesten-bilder/luciatag.jpg">
-                      <img class="gallery" src="luciafesten-bilder/ksg-korthus.jpg">
-                      <img class="gallery" src="luciafesten-bilder/blaset-sång.jpg">
-                      <img class="gallery" src="luciafesten-bilder/luciafest-publik.jpg">
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="panel-title">
-                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
-                        <h4 class="box-header"><img class="ikon" src="Ikoner\tonesGreen.png">Vilka <span class=special-character>ä</span>r <span class=lithe-blas>LiTHe Blås</span> egentligen<span class=special-character>?</span></h4>
-                        <div class="row text-center">
-                          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                        </div> 
-                      </a>
-                    </div>
-                  </div>
-                  <div id="collapse6" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <p>
-                        Plingandet hörs på långt håll. Först bara svagt, sedan starkare och starkare. Plötsligt blandas ljudet med ett vrål och en hord av gul- och blåklädda personer i konstiga hattar stormar fram. Mycket ös och massa flås - vi är LiTHe Blås!
-                      </p>
-                      <p>
-                        Det är inte omöjligt att du har sett oss uppträda någon gång. Vi har nämligen huserat på Linköpings universitet sedan 1973 och vårt studentikosa motto troget dyker vi upp när, var och hur som helst för att spela allt från disco till tokjazz. Vi består i dagsläget av ett femtiotal medlemmar från alla fyra fakulteter.
-                      </p>
-                      <p>
-                        Det är också vi som ligger bakom det årliga Kårallenevenemanget Luciafesten! Under hösten har hela föreningen jobbat för att alla studenter ska få chansen att avsluta läsåret med en julig och kulig fest utöver det vanliga. 
-                      </p>
-                      <p>Hoppas vi ses där!</p>
-                      <p>
-                        Kolla in vår sida om du vill veta mer. Kanske vill du boka en spelning, eller rentav bli en i gänget? 
-                      <a href="http://litheblas.org/sv/" class="btn btn-outline-litheblas" role="button">Till LiTHe Blås hemsida</a>
-                    </div>
-                  </div>
-                </div>
-              </div> 
-            </div>
-          </div><!--/row-->
-        </div><!--/span-->
-      </div><!--/row-->
+</head>
+<body>
 
-      <!--<hr>-->
-            <!--<hr>-->
-      <!-- Add icon library -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<audio id="hedwig" src="hedwig.mp3" type="audio/mp3"></audio>  
 
-<!-- Add font awesome icons -->
-      
-      <footer>
-        <p class="logo">&copy; LiThe Blås 2017</p>
-      </footer>
+<div class="container-fluid">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+		<div class="row">
 
-    </div><!--/.container-->
-  
+			<div id="profilbild_div" class="col-md-5">
+				<h1 id="name"> Albin Bergström </h1>
+			</div>
+			<div class="col-md-2">
+				<img id="profilbild" src="img/albin.png" width="100%">
+			</div>
+			<div class="col-md-5">
+				<p id="description_text">
+					Here are some of the web-projects that I've participated in during my studies at Linköping University.
+				</p>
+			</div>
+		</div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="offcanvas.js"></script>
+		<a href="http://alboin.github.io/Wikinspire.en">
+		<div class="row project">
+			<div class="col-md-4" id="img1">
+				<img class="img-thumbnail" id="wiki_img" src="img\wiki2.jpg" width="100%">
+			</div>
+			<div class="col-md-8">
+				Wikinspire
+				<p>
+					This is the bachelor project that I and four other students at Linköping University did during spring 2016.
+					The website visualizes articles from Wikipedia, how different articles are related to each other and how they are related in time and space.
+					<br><br>
+					For a swedish version of the website use go to
+					<span id="wiki_link"> http://alboin.github.io/Wikinspire </span>				
+					or just click anywhere in this box to get to the english version. </p>
+			</div>
+		</div>
+		</a>
 
-    <script>
 
-      function insertImgSmall()
-      {
-        $("#gallery-div").html('').append('<img class="gallery" src="luciafesten-bilder/trumpet-gyckel.jpg">')
-        .append('<img class="gallery" src="luciafesten-bilder/sittning.jpg">')
-        .append('<img class="gallery" src="luciafesten-bilder/julgran.jpg">')
-        .append('<img class="gallery" src="luciafesten-bilder/ksg-cykel.jpg">')
-        .append('<img class="gallery" src="luciafesten-bilder/luciatag.jpg">')
-        .append('<img class="gallery" src="luciafesten-bilder/ksg-korthus.jpg">')
-        .append('<img class="gallery" src="luciafesten-bilder/blaset-sång.jpg">')
-        .append('<img class="gallery" src="luciafesten-bilder/luciafest-publik.jpg">');
+	
+		<a href="http://sofiekhullar.github.io/hack4swe/"> 
+		<div class="row project">
+			<div class="col-md-4">
+				<img class="img-thumbnail" src="img\arbetslos.jpg" width="100%">
+			</div>
+			<div class="col-md-8">
+				Fullt ös arbetslös 
+				<p>
+					During the hackathron "Hack for Sweden" (2016) me and three other students created a website for visualizing unemployment in Sweden with the help of open data. On the website you can see the comparisons between the sexes and comparisons between different areas of Sweden, visualized with graphs and a 3D-representation of the country.
+				</p>
+			</div>
+		</div>
+		</a>
+	
+		<a href="http://alboin.github.io/bollhav"> 
+		<div class="row project">
+			<div class="col-md-4">
+				<img class="img-thumbnail" src="img\bollhav.jpg" width="100%">
+			</div>
+			<div class="col-md-8">
+				Bollhav 
+				<p>
+					As a part of the course in modelling and simulation me and three other students simulated a ballpit in 3D with the help of the Navier-Stokes equations that is used in fluid simulations. The method for smoothed-particle hydrodynamics is used to compute the different forces involved.
+				</p>
+			</div>
+		</div>
+		</a>
 
-        $(".gallery").css("max-width", "500px");        
-      }
+		<a href="http://jonathangrangien.se/myGalaxy/"> 
+		<div class="row project">
+			<div class="col-md-4">
+				<img class="img-thumbnail" src="img\galaxy3.jpg" width="100%">
+			</div>
+			<div class="col-md-8">
+				Galaxy Goose 
+				<p>
+					During a course in 3D computer graphics me and a group of four other students developed a WebGL application where the user gets to create a solar system in 3D. The user can modify different properties of the planets such as the orbit, amount of moons, texture or even place objects at the different planets. To be able to create and modify a planet in the solar system you will have to create a user and log in.
+				</p>
+			</div>
+		</div>
+		</a>		
 
-      function insertImgLarge()
-      {
-        $("#gallery-div").html('').append('<img class="gallery" src="luciafesten-bilder/trumpet-gyckel.jpg">')
-        .append('<img class="gallery" src="luciafesten-bilder/sittning.jpg">')
-        .append('<img class="gallery" src="luciafesten-bilder/ksg-cykel.jpg">')
-        .append('<img class="gallery" src="luciafesten-bilder/julgran.jpg">')
-        .append('<img class="gallery" src="luciafesten-bilder/luciatag.jpg">')
-        .append('<img class="gallery" src="luciafesten-bilder/ksg-korthus.jpg">')
-        .append('<img class="gallery" src="luciafesten-bilder/blaset-sång.jpg">')
-        .append('<img class="gallery" src="luciafesten-bilder/luciafest-publik.jpg">');
+		<a href="http://skon.nu/index.php"> 
+		<div class="row project">
+			<div class="col-md-4">
+				<img class="img-thumbnail" src="img\skon.jpg" width="100%">
+			</div>
+			<div class="col-md-8">
+				Skön's new webpage 
+				<p>
+					The student choir "Skön" needed a new external webpage to attract new students to sing in the choir so me and two other guys made one.
+				</p>
+			</div>
+		</div>
+		</a>
+	
+	</div>
+	<div class="row">
+		<div class="col-md-5">
+		</div>
+		<div class="col-md-1">
+			<i id="github_icon" class="fa fa-github fa-4x icons" aria-hidden="true"></i>
+		</div>
+		<div class="col-md-1">
+			<i id="linkedin_icon" class="fa fa-linkedin-square fa-4x icons" aria-hidden="true"></i>
+		</div>
+		<div class="col-md-5">
+		</div>
+	</div>
+	<div class="col-md-2"></div>
+	
+</div>
 
-        $(".gallery").css("max-width", $(".panel-default").innerWidth()/2.1 - 20 + "px");
-      }
 
-        //Fixar så att bilden på generalerna byter plats beroende på skärmstorlek.
-        $(window).resize(function() {
-          if(window.innerWidth < 430)
-          {
-            $(".generalerna").insertAfter("#generalerNamn").css("margin", "auto");
-            $("h4.box-header").css("font-size", "1.5em");
-            insertImgSmall();
-          }
-          else
-          {
-            $(".generalerna").insertBefore("#generalerText").css("margin", "10px");   
-            $("h4.box-header").css("font-size", "1.9em");        
-            insertImgLarge();           
-          }
-        });
-        $(window).load(function() {
-          if(window.innerWidth < 430)
-          {
-            $(".generalerna").insertAfter("#generalerNamn").css("margin", "auto");
-            $("h4.box-header").css("font-size", "1.5em");
-            insertImgSmall();
-          }
-          else
-          {
-            $(".generalerna").insertBefore("#generalerText").css("margin", "10px");          
-            $("h4.box-header").css("font-size", "1.9em");
-            insertImgLarge();                   
-          }
-        });
-      
-      </script>
+</body>
 
-  </body>
-</html>
+<script>
+
+	$("#wiki_link").click( function() {
+		window.location.href = "http://alboin.github.io/Wikinspire";
+		return false;
+	});
+
+	$("#github_icon").click( function() {
+		window.location.href = "https://github.com/Alboin";
+		return false;
+	});	
+
+	$("#linkedin_icon").click( function() {
+		window.location.href = "https://www.linkedin.com/in/albin-bergstr%C3%B6m-5069b649";
+		return false;
+	});
+
+	$(document).ready( function() {
+		var img1 = $('<img id="harry" style="position:absolute; z-index: 500; max-width=200px;" src="img/harry.png" width="100%">');
+		img1.appendTo('.container-fluid');
+		img1.width($("#profilbild").width());
+		img1.offset($("#profilbild").offset());
+		img1.css("opacity", 0);
+
+		var img2 = $('<img id="albin_bergstrom" style="position:absolute; z-index: 501; max-width=200px;" src="img/albin_bergstrom.png" width="100%">');
+		img2.appendTo('.container-fluid');
+		img2.width($("#name").width()*0.67);
+		img2.offset({top: $("#name").offset().top, left: $("#name").offset().left + $("#name").width() * 0.32});
+		img2.css("opacity", 0);
+
+
+		var boy = $('<p id="boy_lived" style="position:absolute; z-index: 499;"> "The boy who lived" </p>');
+		boy.appendTo('.container-fluid');
+		boy.offset($("#description_text").offset());
+		boy.css("color", "black");
+		boy.css("font-size", "20px");
+		boy.css("font-family", "'Shadows Into Light', cursive")	
+		boy.css("opacity", 0);
+
+		//Fade in all the projects.
+		$(".project").each(function(index, element) {
+			$(element).delay(200 * index).fadeTo(600,1);
+		});
+
+		$("#profilbild").fadeTo(1000,1);
+		$("#name").fadeTo(1000,1);
+		$("#description_text").fadeTo(1000,1);
+
+
+		// $.flip(OPTIONS, CALLBACK);
+		//$("flipped_picture").delay(1000).flip(true).delay(1000).flip(false);
+		/*      $("#flipper").flip({
+        axis: "y", // y or x
+        reverse: false, // true and false
+        forceHeight: true,
+        forceWidth: true,
+        front: 'auto',
+        trigger: "hover", // click or hover
+        speed: 5000
+      });*/
+		      //$("#flipped_picture").flip(false);
+
+		$('#hedwig').prop("volume", 0.0);
+
+
+		$("#harry").mouseleave( function() {
+			$("#harry").stop(true).fadeTo(200, 0);
+			//$("#albin_bergstrom").stop(true).fadeTo(200, 0);
+			//$("#name").stop(true).fadeTo(200, 1);
+			$("#description_text").stop(true).fadeTo(200, 1);
+			$("#boy_lived").stop(true).fadeTo(200, 0);
+			$("#hedwig").stop(true).animate({volume: 0.0}, 1000, function() {
+				$('audio').each(function(){
+    				this.pause();
+				}); 
+			});
+		});
+		$("#harry").mouseenter( function() {
+			$("#harry").fadeTo(200, 1);
+			//$("#albin_bergstrom").delay(7000).fadeTo(10000, 1);
+			//$("#name").delay(10000).fadeTo(5000, 0);
+			$("#description_text").fadeTo(200, 0);
+			$("#boy_lived").fadeTo(200, 1);
+			$('#hedwig').get(0).play();
+
+			$("#hedwig").stop(true).animate({volume: 0.15}, 6000);
+		});
+	});
+
+
+	$(window).resize(function() {
+		$("#harry").width($("#profilbild").width());
+		$("#harry").offset($("#profilbild").offset());
+		$("#boy_lived").offset($("#description_text").offset());
+	});
+
+
+</script>
