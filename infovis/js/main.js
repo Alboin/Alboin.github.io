@@ -135,14 +135,19 @@ function draw(error, data_c, data_m){
     $(document).ready(function(){
         $('#scatterplot-svg').bind('DOMMouseScroll mousewheel', function(e){
           zoom += Math.sign(e.originalEvent.detail);
+          console.log(zoom)
           updateScatterplot();
         });
         $('#scatterplot-svg').bind('mousewheel', function(e){
           zoom += Math.sign(e.originalEvent.detail);
+          console.log(zoom)
+
           updateScatterplot();
         });
         $('#scatterplot-svg').bind('MouseScrollEvent', function(e){
           zoom += Math.sign(e.originalEvent.detail);
+          console.log(zoom)
+          
           updateScatterplot();
         });
     });
