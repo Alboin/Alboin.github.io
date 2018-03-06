@@ -141,6 +141,10 @@ function draw(error, data_c, data_m){
           zoom += Math.sign(e.originalEvent.detail);
           updateScatterplot();
         });
+        $('#scatterplot-svg').bind('MouseScrollEvent', function(e){
+          zoom += Math.sign(e.originalEvent.detail);
+          updateScatterplot();
+        });
     });
   }
 
