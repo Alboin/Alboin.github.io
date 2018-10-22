@@ -1,0 +1,259 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 50px;
+  /*background-color:  #fff5a4; */
+  /*#691414*//*#ffb755*/
+  /*background-image: url("img/woodBackground.jpg");*/
+  background-image: linear-gradient(to top, #000, #001333);
+  background-size: contain;
+  background-repeat:   repeat;
+}
+footer {
+  padding: 30px 0;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+.jumbotron {
+  background: none;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
+.panel-heading {
+  background-color: #ffffff;
+}
+
+.panel-body
+{
+  background-color: #ebf0d7;
+}
+
+.jumbotron-img {
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+.panel-title > a {
+  text-decoration: none;
+}
+.glyphicon.glyphicon-chevron-down {
+  margin-top: 1em;
+}
+/*.navbar.navbar-fixed-top.navbar-inverse {
+  background-color: #205210;
+}*/
+/*.container {
+  background-color: #fff5a4;
+}*/
+
+.container
+{
+  padding-right: 5%;
+}
+.navbar-inverse .navbar-brand {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: black;
+}
+.navbar-inverse {
+  /*background-color: #fff5a4;*/
+  background-color: #ad3134;
+}
+.panel-default>.panel-heading {/*   Bakgrundsfärg till textrutorna*/
+  background-color: #879357;
+}
+.panel-default
+{
+  border-color: black;
+}
+.navbar-toggle {
+  border-radius: 4px; /* Fyrkantig (0px) eller rundad menyknapp(4px)*/
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #67191b;  /* Färgen på menyrutans ränder*/
+}
+.btn.btn-outline-biljett {
+  background-color: white;
+  border-color: #ffb755;
+}
+.btn.btn-outline-litheblas {
+  background-color: white;
+  border-color: #ffb755;
+}
+
+.text-white {
+  /*color: white;*/
+}
+.clock {
+  font-size: 1.7em;
+  padding: 15px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: snirklig;
+  src: url("fonts/Mechanic of the Heart.ttf");
+}
+
+h4.box-header
+{
+  color: #242c05;
+  font-size: 1.9em;
+  /*font-family: "snirklig";*/
+  text-align: center;
+  font-family: 'Charmonman', cursive;
+  /*font-family: 'Lobster', cursive; */
+}
+
+.special-character
+{
+  font-family: 'Lobster', cursive;
+  color: #242c05;
+}
+
+p
+{
+  color: black;
+  /*font-family: 'MVBoli'; */
+  font-size: 1.1em;
+}
+
+.text-white
+{
+  color:black;
+}
+.generalerna {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 10px;
+  float: right;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #879357;
+}
+#demo-home {
+  font: "Times New Roman";
+  color: #b7ab9e;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+img.ikon
+{
+  display: block;
+  margin: auto;
+  max-width: 1.7em;
+  overflow: auto;
+}
+
+
+@font-face {
+  font-family: blaset;
+  src: url("fonts/Old English Five.ttf");
+}
+/*
+@font-face {
+  font-family: MVBoli;
+  src: url("mvboli.ttf");
+}*/
+
+
+.lithe-blas
+{
+  font-family: blaset;
+  color: #242c05;
+}
+.gallery {
+  width: 100%;
+  max-width: 500px;
+  float: none;
+  padding: 10px;
+}
+.panel-collapse {
+
+}
+#collapse1 {
+  font-style: italic;
+}
+.logo {
+  color: #879357;
+  margin-left: 5%;
+}
+
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: transparent;
+    color: white;
+}
+
+.fa-instagram {
+  background: transparent;
+  color: white;
+}

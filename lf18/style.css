@@ -1,0 +1,85 @@
+
+@keyframes snowAnimation {
+  0% {top: 0%; opacity: 1}
+  100% {top: 99%; opacity: 0}
+}
+
+.snowFlake {
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+  color: white;
+  font-size: 2em;
+  animation-name: snowAnimation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 8s;
+  top:99%;
+  opacity: 0;
+}
+
+
+
+.treeBall {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  /*animation-name: fillScreen1234;*/
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+
+}
+
+p {
+  overflow: hidden;
+}
+
+/*div {
+  transition: 0.4s;
+  clip-path: polygon(50% 5%, 0% 100%, 100% 100%);
+}
+div:hover {
+  clip-path: circle(600px at center);
+}*/
+
+@keyframes fillScreen11 {
+  from {clip-path: circle(var(--rad1) at var(--pos1))}
+  to {clip-path: circle(200% at var(--pos1))}
+}
+@keyframes fillScreen12 {
+  from {clip-path: circle(var(--rad1) at var(--pos1))}
+  to {clip-path: circle(200% at var(--pos1))}
+}
+
+@keyframes fillScreen21 {
+  from {clip-path: circle(var(--rad2) at var(--pos2))}
+  to {clip-path: circle(200% at var(--pos2))}
+}
+@keyframes fillScreen22 {
+  from {clip-path: circle(var(--rad2) at var(--pos2))}
+  to {clip-path: circle(200% at var(--pos2))}
+}
+
+@keyframes fillScreen31 {
+  from {clip-path: circle(var(--rad3) at var(--pos3))}
+  to {clip-path: circle(200% at var(--pos3))}
+}
+@keyframes fillScreen32 {
+  from {clip-path: circle(var(--rad3) at var(--pos3))}
+  to {clip-path: circle(200% at var(--pos3))}
+}
+
+@keyframes fillScreen41 {
+  from {clip-path: circle(var(--rad4) at var(--pos4))}
+  to {clip-path: circle(200% at var(--pos4))}
+}
+@keyframes fillScreen42 {
+  from {clip-path: circle(var(--rad4) at var(--pos4))}
+  to {clip-path: circle(200% at var(--pos4))}
+}
