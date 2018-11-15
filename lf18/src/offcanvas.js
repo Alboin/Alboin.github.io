@@ -1,6 +1,22 @@
+// place this within dom ready function
+function changeJumbo() {
+  $("#blottarImage").attr("src", "img/tuba4.png");
+}
+
 $(document).ready(function() {
   $('[data-toggle=offcanvas]').click(function() {
     $('.row-offcanvas').toggleClass('active');
+  });
+
+  // use setTimeout() to execute
+  setTimeout(changeJumbo, 1000)
+
+  $("#blottarImage").on("click", function() {
+    if($("#blottarImage").attr("src") == "img/tuba4.png") {
+      $("#blottarImage").attr("src", "img/tubaClosed.png");
+    } else {
+      $("#blottarImage").attr("src", "img/tuba4.png");
+    }
   });
 });
 /*var deadline = '2017-12-09 22:00:00 GTM+0200';
