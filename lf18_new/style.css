@@ -1,0 +1,179 @@
+body {
+  background-image: linear-gradient(rgb(18, 33, 122), rgb(127, 133, 161));
+}
+
+h1 {
+  color: white;
+  font-family: 'Charmonman', cursive;
+  text-shadow: 0px 0px 10px white;
+  margin-top: 0.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+  color: #333333;
+}
+
+span {
+  text-shadow: 0px 0px 10px white;
+  font-size: 1.5em;
+}
+
+@font-face {
+  font-family: blaset;
+  src: url("Old English Five.ttf");
+}
+
+.lithe-blas {
+  font-family: blaset;
+  font-size: 0.85em;
+}
+
+.handwritten {
+  font-family: 'Indie Flower', cursive;
+}
+
+.countdownDiv {
+  text-align: center;
+  text-shadow: 0px 0px 0.5em black;
+  color: white;
+  opacity: 0.4;
+}
+
+@keyframes glowing {
+  0% { box-shadow: 0 0 -10px white; }
+  40% { box-shadow: 0 0 20px white; }
+  60% { box-shadow: 0 0 20px white; }
+  100% { box-shadow: 0 0 -10px white; }
+}
+
+.button-glow {
+  animation: glowing 1000ms infinite;
+}
+
+.panel {
+  min-height: 7em;
+  background-color: #ad3134;
+  text-align: center;
+  margin: 0;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+.textcontainer {
+  background-color: #ebf0d7;
+  padding: 2em;
+}
+
+.gallery {
+  margin: 2%;
+}
+
+.col-md-6 {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
+
+.bigImage {
+  text-align: center;
+}
+
+.ikon {
+  width: 4em;
+}
+
+.snowFlake {
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+  color: white;
+  font-size: 2em;
+  animation-name: snowAnimation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 8s;
+  top:99%;
+  opacity: 0;
+}
+
+@keyframes snowAnimation {
+  0% {top: 0%; opacity: 1}
+  100% {top: 99%; opacity: 0}
+}
+
+#blottarImage {
+  width: 70%;
+  margin: 0;
+  cursor: pointer;
+}
+
+#luciafestenImage {
+  margin: 0;
+  margin-top: 5em;
+  width: 100%;
+}
+
+#datum {
+  position: absolute;
+  right: 10%;
+  top: 100%;
+  width: 16%;
+  opacity: 0.9;
+}
+
+.lastRow {
+  margin-bottom: 5em;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: transparent;
+    color: white;
+}
+.fa-instagram {
+  background: transparent;
+  color: white;
+}
+
+.glyphicon {
+  color: white;
+}
+.navbar-inverse .navbar-brand {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: black;
+}
+.navbar-inverse {
+  background-color: #ad3134;
+}
+.navbar-toggle {
+  border-radius: 4px; /* Fyrkantig (0px) eller rundad menyknapp(4px)*/
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #67191b;  /* Färgen på menyrutans ränder*/
+}
+.btn.btn-outline-biljett {
+  background-color: white;
+  border-color: #ffb755;
+}
+.btn.btn-outline-litheblas {
+  background-color: white;
+  border-color: #ffb755;
+}
