@@ -1,2 +1,0 @@
-Mårten:
-Har fixat en kalender som uppdaterar varje dag från PR-periodens början fram till 2 dagar innan festen, om jag har tänkt rätt. Lägg alla bilder du vill lägga upp i mappen img/kalender/ och döp dem till "dagX.jpg". Texter du vill ha till bilderna lägger du längst ned i index.html, jag har lagt en exempel-text där. Lägg till på samma sätt och ge varje text ett numrerat id, som i exemplet :)

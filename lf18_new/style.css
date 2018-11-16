@@ -1,5 +1,6 @@
 body {
   background-image: linear-gradient(rgb(18, 33, 122), rgb(127, 133, 161));
+  overflow-x: hidden;
 }
 
 h1 {
@@ -119,6 +120,10 @@ span {
   animation-duration: 8s;
   top:99%;
   opacity: 0;
+}
+
+.noshow {
+  display: none;
 }
 
 @keyframes snowAnimation {

@@ -62,7 +62,8 @@ function countDown() {
 
   if(!$("#kalender").hasClass("updated")) {
     console.log(days);
-    var pictureNumber = Math.min(1, Math.max(24, days));
+    var pictureNumber = Math.min(1, Math.max(24, 26 - days));
+    console.log(pictureNumber);
     $("#kalender").addClass("updated").attr("src", "img/kalender/dag" + pictureNumber + ".jpg");
     $("#kalenderText").html($("#kalenderText" + pictureNumber).html());
   }
