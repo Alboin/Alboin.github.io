@@ -59,13 +59,21 @@ function countDown() {
     document.getElementById("countdown").innerHTML = days + " dagar " + hours + " timmar "
   + minutes + " m " + seconds + " s ";
   }
+
+  if(!$("#kalender").hasClass("updated")) {
+    console.log(days);
+    var pictureNumber = Math.min(1, Math.max(24, days));
+    $("#kalender").addClass("updated").attr("src", "img/kalender/dag" + pictureNumber + ".jpg");
+    $("#kalenderText").html($("#kalenderText" + pictureNumber).html());
+  }
+
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("countdown").innerHTML = "NU ÄR DET FEST!!!";
     // Start a pulsing glow at the top ticket button and the ticket panel.
     $(".buyTicket").addClass("button-glow");
-    $($(".textcontainer")[3]).addClass("button-glow-slow")
+    $($(".textcontainer")[3]).addClass("button-glow-slow");
   }
   }, 1000);
 }

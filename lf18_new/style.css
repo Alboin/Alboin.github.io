@@ -56,7 +56,6 @@ span {
   animation: glowing 2000ms infinite;
 }
 
-
 .panel {
   min-height: 7em;
   background-color: #ad3134;
@@ -73,6 +72,10 @@ span {
 
 .gallery {
   margin: 2%;
+}
+
+.kalender {
+  width: 90%;
 }
 
 .col-md-6 {
@@ -121,6 +124,11 @@ span {
 @keyframes snowAnimation {
   0% {top: 0%; opacity: 1}
   100% {top: 99%; opacity: 0}
+}
+
+#kalenderText {
+  font-size: 1.5em;
+  margin-top: 1em;
 }
 
 #blottarImage {
