@@ -52,6 +52,11 @@ span {
   animation: glowing 1000ms infinite;
 }
 
+.button-glow-slow {
+  animation: glowing 2000ms infinite;
+}
+
+
 .panel {
   min-height: 7em;
   background-color: #ad3134;
@@ -81,6 +86,20 @@ span {
 
 .ikon {
   width: 4em;
+  margin-top: 0.5em;
+}
+
+.sponsorRow {
+  text-align: center;
+  background-image: linear-gradient(rgba(127, 133, 161, 0), rgba(18, 33, 122, 255));
+}
+
+.sponsor {
+  padding: 5em;
+}
+
+.sponsorLogo {
+  width: 80%;
 }
 
 .snowFlake {
@@ -122,10 +141,6 @@ span {
   top: 100%;
   width: 16%;
   opacity: 0.9;
-}
-
-.lastRow {
-  margin-bottom: 5em;
 }
 
 /* Style all font awesome icons */
