@@ -46,7 +46,7 @@
 </head>
 <body>
 
-<audio id="hedwig" src="hedwig.mp3" type="audio/mp3"></audio>  
+<audio id="hedwig" src="hedwig.mp3" type="audio/mp3"></audio>
 
 <div class="container-fluid">
 	<div class="col-md-2"></div>
@@ -78,35 +78,49 @@
 					The website visualizes articles from Wikipedia, how different articles are related to each other and how they are related in time and space.
 					<br><br>
 					For a swedish version of the website use go to
-					<span id="wiki_link"> http://alboin.github.io/Wikinspire </span>				
+					<span id="wiki_link"> http://alboin.github.io/Wikinspire </span>
 					or just click anywhere in this box to get to the english version. </p>
 			</div>
 		</div>
 		</a>
 
+		<a href="http://mirantum.se">
+		<div class="row project">
+			<div class="col-md-4">
+				<img class="img-thumbnail" src="img\mirantum.jpg" width="100%">
+			</div>
+			<div class="col-md-8">
+				Mirantum
+				<p>
+					Made a new website for the company Mirantum with information about the company and what they do. The website had to be responsive and give a more modern look compared to the old one. It also contains contact forms for visitors to make contact with the company, which was a new area of programming for me at the time.
+				</p>
+			</div>
+		</div>
+		</a>
 
-	
-		<a href="http://sofiekhullar.github.io/hack4swe/"> 
+
+
+		<a href="http://sofiekhullar.github.io/hack4swe/">
 		<div class="row project">
 			<div class="col-md-4">
 				<img class="img-thumbnail" src="img\arbetslos.jpg" width="100%">
 			</div>
 			<div class="col-md-8">
-				Fullt ös arbetslös 
+				Fullt ös arbetslös
 				<p>
 					During the hackathron "Hack for Sweden" (2016) me and three other students created a website for visualizing unemployment in Sweden with the help of open data. On the website you can see the comparisons between the sexes and comparisons between different areas of Sweden, visualized with graphs and a 3D-representation of the country.
 				</p>
 			</div>
 		</div>
 		</a>
-	
-		<a href="http://alboin.github.io/bollhav"> 
+
+		<a href="http://alboin.github.io/bollhav">
 		<div class="row project">
 			<div class="col-md-4">
 				<img class="img-thumbnail" src="img\bollhav.jpg" width="100%">
 			</div>
 			<div class="col-md-8">
-				Bollhav 
+				Bollhav
 				<p>
 					As a part of the course in modelling and simulation me and three other students simulated a ballpit in 3D with the help of the Navier-Stokes equations that is used in fluid simulations. The method for smoothed-particle hydrodynamics is used to compute the different forces involved.
 				</p>
@@ -114,34 +128,34 @@
 		</div>
 		</a>
 
-		<a href="http://jonathangrangien.se/myGalaxy/"> 
+		<a href="http://jonathangrangien.se/myGalaxy/">
 		<div class="row project">
 			<div class="col-md-4">
 				<img class="img-thumbnail" src="img\galaxy3.jpg" width="100%">
 			</div>
 			<div class="col-md-8">
-				Galaxy Goose 
+				Galaxy Goose
 				<p>
 					During a course in 3D computer graphics me and a group of four other students developed a WebGL application where the user gets to create a solar system in 3D. The user can modify different properties of the planets such as the orbit, amount of moons, texture or even place objects at the different planets. To be able to create and modify a planet in the solar system you will have to create a user and log in.
 				</p>
 			</div>
 		</div>
-		</a>		
+		</a>
 
-		<a href="http://skon.nu/index.php"> 
+		<a href="http://skon.nu/index.php">
 		<div class="row project">
 			<div class="col-md-4">
 				<img class="img-thumbnail" src="img\skon.jpg" width="100%">
 			</div>
 			<div class="col-md-8">
-				Skön's new webpage 
+				Skön's new webpage
 				<p>
 					The student choir "Skön" needed a new external webpage to attract new students to sing in the choir so me and two other guys made one.
 				</p>
 			</div>
 		</div>
 		</a>
-	
+
 	</div>
 	<div class="row">
 		<div class="col-md-5">
@@ -156,7 +170,7 @@
 		</div>
 	</div>
 	<div class="col-md-2"></div>
-	
+
 </div>
 
 
@@ -172,7 +186,7 @@
 	$("#github_icon").click( function() {
 		window.location.href = "https://github.com/Alboin";
 		return false;
-	});	
+	});
 
 	$("#linkedin_icon").click( function() {
 		window.location.href = "https://www.linkedin.com/in/albin-bergstr%C3%B6m-5069b649";
@@ -198,7 +212,7 @@
 		boy.offset($("#description_text").offset());
 		boy.css("color", "black");
 		boy.css("font-size", "20px");
-		boy.css("font-family", "'Shadows Into Light', cursive")	
+		boy.css("font-family", "'Shadows Into Light', cursive")
 		boy.css("opacity", 0);
 
 		//Fade in all the projects.
@@ -236,7 +250,7 @@
 			$("#hedwig").stop(true).animate({volume: 0.0}, 1000, function() {
 				$('audio').each(function(){
     				this.pause();
-				}); 
+				});
 			});
 		});
 		$("#harry").mouseenter( function() {
